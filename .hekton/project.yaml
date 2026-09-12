@@ -87,6 +87,9 @@ deployment:
   protected_domain_state: verified
   https_certificate_state: approved
   https_enforced: false
+  site_content_live: true
+  first_deploy_run: "https://github.com/coderturtle/copilot-fluent/actions/runs/34716207437"
+  first_deploy_date: 2026-09-12
   # Recorded after a real `terraform apply` in agentic-infra-lab's
   # github-pages-dns pattern (PR #14, hosted zone Z3DLQAZ6G5LV63). CNAME and
   # TXT records confirmed live via `dig` against real public resolvers, not
@@ -99,11 +102,12 @@ deployment:
   # approved certificate has propagated, or it may need a manual toggle —
   # not yet confirmed either way, don't assume.
   #
-  # site_content_live: false — this is the DNS/Pages infra layer only. The
-  # actual site returns 404 (`curl -sS -o /dev/null -w '%{http_code}'
-  # https://copilot-fluent.coderturtle.io/` → 404) because the deploy
-  # workflow and site content live only on the still-open PR
-  # coderturtle/copilot-fluent#2, not yet merged to main, and no
-  # `workflow_dispatch` deploy has ever been triggered. Do not read this
-  # block as "the site is live" — only the domain/Pages plumbing is.
+  # site_content_live: true, confirmed 2026-09-12 — coderturtle/copilot-fluent#2
+  # (Phases 0-5 + usability pass) merged via squash to main (775a907), the
+  # deploy workflow ran (build + deploy jobs both succeeded), and the live
+  # site was independently verified with a fresh `curl` (HTTP 200) and a
+  # title check ("Copilot Fluent: guide"), not trusted from the workflow's
+  # own green checkmark alone. All modules are still "Skeleton only" —
+  # this confirms the skeleton/build pipeline is live, not that real module
+  # content exists yet.
 
