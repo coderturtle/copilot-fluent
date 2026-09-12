@@ -1,36 +1,40 @@
 # Copilot Fluent
 
-**Classification:** factory-output
-**Lifecycle:** active
-**Owner:** coderturtle
-**Promotion target:** `none`
+Most enterprise Microsoft 365 Copilot seats get used as a fancier search box. Microsoft's own official prep for the AB-730 certification helps, but it's ungraded, scattered across separate modules, and covers roughly one of the exam's three skill areas. Copilot Fluent is a self-paced workshop that gates you on producing real work, not reading about it, across all three.
 
-> Teach non-technical knowledge workers to get real productivity value from enterprise Microsoft 365 Copilot (Work IQ, Copilot in Word/Excel/PowerPoint/Outlook/Teams, Researcher/Analyst agents) via hands-on exercises through a recurring fictional company scenario, gated by a required-output checklist plus an AI-graded rubric, with the module arc mapped to the AB-730 (Microsoft Certified: AI Business Professional) exam.
+## What this is
 
-## Implementation Status
+Nine modules, one continuing fictional workplace (a boutique financial-advisory firm), real M365 apps. Every module ends with two checks: a required-output checklist (did you actually produce the thing, with the properties it needed) and an AI-graded rubric (is it good). No module advances on "read this, then move on."
 
-- Scaffolded 2026-09-12 — initial setup in progress.
+The module arc is mapped directly onto AB-730's own published skills outline - draft business content, manage prompts and conversations, build a first no-code agent, verify AI output instead of trusting it blindly. The goal is to leave you ready to sit AB-730 for real, not just to have read about Copilot.
 
-## Documentation Contract
+**Who it's for:** non-technical knowledge workers with a licensed enterprise Microsoft 365 Copilot seat (the paid add-on, not the free baseline Copilot Chat). No git, no command line, no coding background assumed - you work through this from a website, using the M365 apps you already have.
 
-Agents working here must inspect `.hekton/project.yaml` before structural changes, keep `docs/session-log.md` current, record meaningful design decisions in `docs/decisions.md`, and update `docs/next-actions.md` when the work queue changes.
+## Prerequisites
 
-Vault mutation policy: see `vault_mutation_allowed` in `.hekton/project.yaml` (authoritative; defaults to false at scaffold time). The repo-local `mind-palace/` folder is only a mirror draft; do not write to the live vault unless `.hekton/project.yaml` says mutation is allowed and it is explicitly authorised in-session.
+- A licensed enterprise Microsoft 365 Copilot seat, with your organization's IT/admin support if a specific feature (scheduling a prompt, adding an agent) needs approval.
+- Comfort with Word, Excel, PowerPoint, Outlook, and Teams at a normal daily-user level. Nothing more technical than that.
 
-## Quick Start
+## How to start
 
-```bash
-# Add project-specific commands here
-```
+Work through the modules in order - see [`modules/README.md`](modules/README.md) for the full arc. Each module states what you'll produce and what you get to keep afterward (a personal, reusable set of prompts for that part of your job).
 
-## Key Docs
+> **Current status: skeleton only.** The design (arc, gates, scenario) is complete and has been through a full review; the actual exercises, fixtures, and grading prompts don't exist yet. Watch `docs/build-log/` for progress, or [open an issue](https://github.com/coderturtle/copilot-fluent/issues) to ask.
 
-- [Session Log](docs/session-log.md)
-- [Decisions](docs/decisions.md)
-- [Risks](docs/risks.md)
-- [Project Walkthrough](docs/project-walkthrough.md)
-- [Next Actions](docs/next-actions.md)
-- [Operating Model](docs/operating-model.md)
-- [Human Understanding Check](docs/human-understanding-check.md)
-- [Depth Decision](docs/depth-decision.md)
+## What you keep
+
+Each module leaves you with a personal, reusable prompt pack for that part of your work: grounding and chat-vs-agent prompts, a verification checklist, a core prompt template, conversation-hygiene habits, drafting prompts for Word and Outlook, an analysis pack for Excel and PowerPoint, a meetings pack for Teams, an agent-instructions template, and a full assembled pack at the end tying it all together.
+
+## Why AB-730
+
+[AB-730, "Microsoft Certified: AI Business Professional,"](https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/) is a real, current, no-code Microsoft certification. This workshop's arc maps onto its published skills outline rather than inventing its own sequence. It's designed to prepare you to sit that exam - not a guarantee, and completing this workshop on its own doesn't credential anything; AB-730 is a separate, real, proctored exam you still have to sit.
+
+## Something wrong?
+
+This is early and imperfect by design. If a module reduces to "read this, then move on" instead of a real gate, or a link here is broken, [open an issue](https://github.com/coderturtle/copilot-fluent/issues).
+
+## Key docs
+
+- [Workshop Design](docs/workshop-design.md): audience, AB-730 curriculum research, gate design, full module arc
+- [Maintainers](docs/maintainers.md): internal/agent-facing docs, classification, documentation contract
 
