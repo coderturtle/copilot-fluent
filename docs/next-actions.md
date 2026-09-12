@@ -4,7 +4,7 @@
 
 - [ ] Deliverables & branding: module skeleton, brand layer, README/maintainers split (Phase 3)
 - [ ] **Blocking content-time dependency:** re-verify §12's DLP/Purview claims against Microsoft's live compliance documentation before any of it reaches learner-facing module content — flagged by both the design doc itself and the Security-Conscious Reviewer persona as not yet independently checked
-- [ ] **Human/brand decision, not yet made:** should the Kellerman & Castle Easter egg (Patrick Swayze cast) be revealed to learners post-capstone, as the Developer Evangelist persona proposed? Currently scoped as permanently internal-only.
+- [ ] Design the actual reveal mechanism for the Kellerman & Castle Easter egg (human-confirmed 2026-09-12: reveal once, post-capstone) — footer credit, Module 09 postscript, or a dedicated page; decide during Phase 3/4
 
 ## This Week
 
