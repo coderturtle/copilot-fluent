@@ -22,11 +22,11 @@
 - [ ] Add the simulation-only marking, jurisdiction assumption, and distribution-warning requirements (`docs/brand.md`'s liability rules) as explicit Tier-1 checklist items in Modules 05, 06, 08, and 09 when real content is authored - the design doc states these rules but the module skeletons don't yet require evidence of them, found by cross-model review.
 - [ ] Carry §11's per-module tenant/admin-policy fallbacks (Module 03's scheduling fallback, Module 04's notebook substitute, Module 06's Analyst substitute) into those modules' own README content when authored - currently only stated in `docs/workshop-design.md` §11, not repeated in the module skeletons themselves.
 
-**GitHub Pages setup (all three needed before `workflow_dispatch`, corrected after cross-model review found the workflow's own comments were factually wrong about how this works):**
-- [ ] Enable GitHub Pages in repo Settings with source = GitHub Actions (the default `GITHUB_TOKEN` cannot self-enable this; needs a human or a stronger credential)
-- [ ] Set the custom domain (`copilot-fluent.coderturtle.io`) in that same Settings > Pages page - don't rely on `site/public/CNAME` in the build artifact alone for an Actions-based deploy
-- [ ] Confirm DNS for `copilot-fluent.coderturtle.io` resolves (via agentic-infra-lab's `github-pages-dns` pattern)
-- [ ] Get a human to trigger the first real `workflow_dispatch` deploy once all three above are done (same open item as all four prior workshops)
+**GitHub Pages setup — done 2026-09-12, verified directly, not trusted from any tool's own success claim:**
+- [x] Enable GitHub Pages in repo Settings with source = GitHub Actions — done (`build_type: workflow` confirmed via `gh api repos/coderturtle/copilot-fluent/pages`)
+- [x] Set the custom domain (`copilot-fluent.coderturtle.io`) — done, `cname` field confirmed set, `protected_domain_state: verified` (not inferred from `pending_domain_unverified_at` alone — checked the actual field)
+- [x] Confirm DNS for `copilot-fluent.coderturtle.io` resolves — done via `agentic-infra-lab`'s `github-pages-dns` pattern (PR #14, terraform applied 2026-09-12); `dig +short CNAME`/`dig +short TXT` both confirmed against real public resolvers. HTTPS certificate state is `approved` (expires 2026-12-11); `https_enforced` is still `false` — not yet confirmed whether GitHub flips this automatically or needs a manual toggle.
+- [ ] **Get a human to trigger the first real `workflow_dispatch` deploy — now the only remaining step, but blocked on merging `coderturtle/copilot-fluent#2` first.** The deploy workflow and site content currently exist only on that still-open PR's branch; `main` has neither, so `gh workflow list` returns nothing and the live site 404s (`curl` confirmed) despite DNS/Pages/domain being fully live. Merge the PR, then trigger the deploy.
 
 - [ ] Cross-workshop: fix `scripts/verify-project.sh` / `scaffold-project.sh` so newly-scaffolded repos don't fail their own `--dry-run` on `docs/local-assumptions.md` — confirmed the same failure exists in `heartbeat`, not unique to this repo
 - [ ] Tenant/licence/admin-policy preflight: confirm coderturtle's own enterprise M365 Copilot access (SKU, admin policies, budget) before committing to per-module dogfooding claims
