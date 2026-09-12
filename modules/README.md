@@ -4,7 +4,7 @@ Copilot Fluent's arc is designed to map onto [AB-730](https://learn.microsoft.co
 
 **Hands-on by design, not passive text.** No module here completes by reading it. Every module states a required gate before content exists - an artifact you produce, checked two ways. Every gate also has a stated **takeaway**: you keep something reusable, not just proof you did the exercise.
 
-> **Content status: skeleton only.** All nine modules have a decided question, arc position, gate design, and takeaway shape - see `docs/workshop-design.md` for the full design, hardened through 3 rounds of adversarial review and a 7-persona Workshop Review Panel pass. No module has an authored exercise, fixture, or grading prompt yet - that's Coachgremlin's job, run later, one module at a time, per the Workshop Gremlin's own Completion Condition (it stops before content exists).
+> **Content status: skeleton only.** All nine modules have a decided question, arc position, gate design, and takeaway shape - see `docs/workshop-design.md` for the full design, hardened through 3 rounds of adversarial review and a 7-persona Workshop Review Panel pass. No module has an authored exercise, fixture, or grading prompt yet - the workshop team will write that later, one module at a time, before you reach it.
 
 ## The gate, in plain terms
 
@@ -19,17 +19,21 @@ Full design, including exactly what each tier can and can't prove: [`docs/worksh
 
 ## The arc
 
-| # | Module | Hard prerequisite | The question it answers |
-|---|---|---|---|
-| 01 | [Starting at Kellerman & Castle](01-starting-at-kellerman-and-castle/README.md) | none | How does Copilot's response change when it's grounded in your actual work content, and when should you reach for a chat versus an agent? |
-| 02 | [Trust, But Verify](02-trust-but-verify/README.md) | 01 | Given a Copilot output riddled with planted errors, can you find every one and defend your correction? |
-| 03 | [The Anatomy of a Working Prompt](03-anatomy-of-a-working-prompt/README.md) | none (hard prerequisite for 04-08) | What turns a vague ask into a prompt Copilot can act on well, and how do you make that prompt reusable? |
-| 04 | [Conversations, Notebooks, and Memory](04-conversations-notebooks-and-memory/README.md) | 03 | How do you keep months of Copilot conversations findable, and teach it how you like things done? |
-| 05 | [Drafting in Word and Outlook](05-drafting-in-word-and-outlook/README.md) | 03 | Starting from someone else's messy document, how fast can you produce a client-ready letter and an executive summary - without it reading as investment advice? |
-| 06 | [Analysis Across Apps: Excel to PowerPoint](06-analysis-across-apps/README.md) | 03 | Given raw client portfolio numbers, can you produce a deck whose headline-numbers slide traces entirely to real cells - as pure reporting, not recommendation? |
-| 07 | [Meetings and Pages in Teams](07-meetings-and-pages-in-teams/README.md) | 03 | Coming out of a client meeting, can you produce a recap that captures every real action item and a Page a colleague could pick up cold? |
-| 08 | [Your First Agent](08-your-first-agent/README.md) | 03 | When is a plain chat not enough, and can you configure an agent that answers a test question using its configured knowledge? |
-| 09 | [Synthesis Capstone](09-synthesis-capstone/README.md) | all of 01-08 | Assigned Molly's full quarterly review end-to-end, can you produce every required artifact plus something that couldn't be assembled from Modules 01-08's already-submitted work alone? |
+Rough time estimates below are exactly that - estimates, not commitments. No module has authored content yet (they're all skeletons, see the status note above), so these are judgment calls based on each module's planned exercises, expected to take roughly this long once built. Budget roughly 7-9 hours total across all nine modules, spread across multiple sessions - this isn't designed to be done in one sitting.
+
+| # | Module | Hard prerequisite | The question it answers | Estimated time* |
+|---|---|---|---|---|
+| 01 | [Starting at Kellerman & Castle](01-starting-at-kellerman-and-castle/README.md) | none | How does Copilot's response change when it's grounded in your actual work content, and when should you reach for a chat versus an agent? | ~30-45 min |
+| 02 | [Trust, But Verify](02-trust-but-verify/README.md) | 01 | Given a Copilot output riddled with planted errors, can you find every one and defend your correction? | ~45-60 min |
+| 03 | [The Anatomy of a Working Prompt](03-anatomy-of-a-working-prompt/README.md) | none (hard prerequisite for 04-08) | What turns a vague ask into a prompt Copilot can act on well, and how do you make that prompt reusable? | ~45-60 min |
+| 04 | [Conversations, Notebooks, and Memory](04-conversations-notebooks-and-memory/README.md) | 03 | How do you keep months of Copilot conversations findable, and teach it how you like things done? | ~30-45 min |
+| 05 | [Drafting in Word and Outlook](05-drafting-in-word-and-outlook/README.md) | 03 | Starting from someone else's messy document, how fast can you produce a client-ready letter and an executive summary - without it reading as investment advice? | ~45-60 min |
+| 06 | [Analysis Across Apps: Excel to PowerPoint](06-analysis-across-apps/README.md) | 03 | Given raw client portfolio numbers, can you produce a deck whose headline-numbers slide traces entirely to real cells - as pure reporting, not recommendation? | ~45-60 min |
+| 07 | [Meetings and Pages in Teams](07-meetings-and-pages-in-teams/README.md) | 03 | Coming out of a client meeting, can you produce a recap that captures every real action item and a Page a colleague could pick up cold? | ~30-45 min |
+| 08 | [Your First Agent](08-your-first-agent/README.md) | 03 | When is a plain chat not enough, and can you configure an agent that answers a test question using its configured knowledge? | ~45-60 min |
+| 09 | [Synthesis Capstone](09-synthesis-capstone/README.md) | all of 01-08 | Assigned Molly's full quarterly review end-to-end, can you produce every required artifact plus something that couldn't be assembled from Modules 01-08's already-submitted work alone? | ~90-120 min (the capstone - clearly the longest sitting, plan a dedicated block) |
+
+*Estimates only, not commitments - see the note above the table.
 
 Full per-module AB-730 bullet mapping, gate design, and coverage matrix: [`docs/workshop-design.md`](../docs/workshop-design.md) §7.
 

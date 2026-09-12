@@ -17,20 +17,20 @@ Fourth module. Prerequisite: [Module 03](../03-anatomy-of-a-working-prompt/READM
 - Write a personal-instructions text that changes future Copilot outputs, not a generic wish list.
 - Correctly distinguish what Copilot's memory does from what its instructions do.
 
-## Exercise material to draw from (not a spec - Coachgremlin authors the real exercise later)
+## Exercise material to draw from (not a spec - the workshop team authors the real exercise later)
 
 AB-730 outline bullets 2.2.1-2.2.4, 3.2.3. `fixtures/` (Oda Mae Brown's office-knowledge-cleanup scenario, 5 named prior conversations) does not exist yet.
 
 ## Required gate (placeholder - real checklist and grading prompt written later)
 
-- **Tier 1 (required-output checklist):** given 5 named prior conversations, find and rename all 5 to a stated naming convention, then add exactly 3 of those 5 to a named notebook (exact-set comparison against the notebook's membership, not just any 3); confirm 1 named chat deleted (checkable absence); a closed-set exercise selecting the 2 true statements out of 4 about memory vs. instructions against a published key; a personal-instructions text with exactly a bulleted list of ≥3 items under a stated heading.
+- **Tier 1 (required-output checklist):** given 5 named prior conversations, find and rename all 5 to a stated naming convention, then add exactly 3 of those 5 to a named notebook (exact-set comparison against the notebook's membership, not just any 3); confirm 1 named chat deleted (checkable absence); a closed-set exercise (pick from a fixed list of answers, not open-ended) selecting the 2 true statements out of 4 about memory vs. instructions against a published key; a personal-instructions text with exactly a bulleted list of ≥3 items under a stated heading.
 - **Tier 2 (AI-graded rubric):** are the personal instructions specific enough to actually change future outputs, not generic platitudes.
 
 Full design: [`docs/workshop-design.md`](../../docs/workshop-design.md) §7, Module 04 row.
 
 ## Takeaway
 
-A conversation-hygiene + personal-instructions prompt pack. Packaged by Coachgremlin once the gate is met.
+A conversation-hygiene + personal-instructions prompt pack. Prepared for you once the exercise is built and you complete the gate.
 
 ## Stop condition (placeholder)
 
@@ -38,4 +38,4 @@ The learner's conversation organization, closed-set answers, and instructions te
 
 ---
 
-> **Skeleton only.** This module has a decided question, arc position, gate shape, and takeaway shape. It has no authored exercise, fixture, or grading prompt yet - that's Coachgremlin's job, run later. See [`modules/README.md`](../README.md) for workshop-wide status.
+> **Skeleton only.** This module has a decided question, arc position, gate shape, and takeaway shape. It has no authored exercise, fixture, or grading prompt yet - the workshop team will build that later. See [`modules/README.md`](../README.md) for workshop-wide status.

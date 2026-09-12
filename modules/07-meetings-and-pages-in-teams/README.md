@@ -16,20 +16,20 @@ Seventh module. Prerequisite: [Module 03](../03-anatomy-of-a-working-prompt/READ
 - Build a Copilot Page structured well enough for a colleague to pick up without extra explanation.
 - Share a Page with named collaborators.
 
-## Exercise material to draw from (not a spec - Coachgremlin authors the real exercise later)
+## Exercise material to draw from (not a spec - the workshop team authors the real exercise later)
 
 AB-730 outline bullets 3.2.1-3.2.2; Microsoft's own "[Exercise - Manage meetings and collaboration with Microsoft Copilot](https://learn.microsoft.com/en-us/training/modules/manage-meetings-collaboration/)" is real, verified exercise material to draw from (not a spec to copy). `fixtures/` (Molly Jensen's portfolio-review meeting transcript, with a grading-only pre-registered list of exact action-item strings) does not exist yet.
 
 ## Required gate (placeholder - real checklist and grading prompt written later)
 
-- **Tier 1 (required-output checklist):** transcript fixture ships with a grading-only, pre-registered list of N exact action-item strings (never shown to the learner); recap contains all N of those exact strings; a Page with ≥3 named sections, confirmed shared (self-attested).
+- **Tier 1 (required-output checklist):** transcript fixture ships with a grading-only, pre-registered list of N exact action-item strings (an answer list kept hidden from you, used only to check your work - never shown to the learner); recap contains all N of those exact strings; a Page with ≥3 named sections, confirmed shared (self-attested - you confirm this yourself).
 - **Tier 2 (AI-graded rubric):** recap clarity/usefulness to someone who wasn't in the meeting.
 
 Full design: [`docs/workshop-design.md`](../../docs/workshop-design.md) §7, Module 07 row.
 
 ## Takeaway
 
-A Teams/meetings prompt pack. Packaged by Coachgremlin once the gate is met.
+A Teams/meetings prompt pack. Prepared for you once the exercise is built and you complete the gate.
 
 ## Stop condition (placeholder)
 
@@ -37,4 +37,4 @@ The learner's recap and Page satisfy Tier 1's checklist, and Tier 2's rubric con
 
 ---
 
-> **Skeleton only.** This module has a decided question, arc position, gate shape, and takeaway shape. It has no authored exercise, fixture, or grading prompt yet - that's Coachgremlin's job, run later. See [`modules/README.md`](../README.md) for workshop-wide status.
+> **Skeleton only.** This module has a decided question, arc position, gate shape, and takeaway shape. It has no authored exercise, fixture, or grading prompt yet - the workshop team will build that later. See [`modules/README.md`](../README.md) for workshop-wide status.

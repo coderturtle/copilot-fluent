@@ -14,7 +14,7 @@ Second module. Prerequisite: [Module 01](../01-starting-at-kellerman-and-castle/
 - Select an appropriate verification method (citation check vs. human review) for a given claim.
 - State, specifically, what sensitive data shouldn't be pasted into Copilot in a real version of this scenario.
 
-## Exercise material to draw from (not a spec - Coachgremlin authors the real exercise later)
+## Exercise material to draw from (not a spec - the workshop team authors the real exercise later)
 
 AB-730 outline bullets 1.2.1-1.2.4, plus `docs/workshop-design.md` §12's data-protection honesty section. `fixtures/` (a flawed Copilot output about Molly Jensen's portfolio, with a grading-only key of exact planted-error strings) does not exist yet.
 
@@ -22,14 +22,14 @@ AB-730 outline bullets 1.2.1-1.2.4, plus `docs/workshop-design.md` §12's data-p
 
 ## Required gate (placeholder - real checklist and grading prompt written later)
 
-- **Tier 1 (required-output checklist):** a verification memo naming all N planted errors, each as an exact quoted substring matching a grading-only key (never shown to the learner); each error paired with the correct verification-method label from that same key; a stated one-line correction per error (presence-checked only - correctness is Tier 2); a non-empty answer to "what sensitive data appeared here, and what would you not paste into Copilot in a real version of this scenario."
+- **Tier 1 (required-output checklist):** a verification memo naming all N planted errors, each as an exact quoted substring matching a grading-only key (an answer list the workshop keeps hidden from you, used only to check your work - never shown to the learner); each error paired with the correct verification-method label from that same key; a stated one-line correction per error (presence-checked only - correctness is Tier 2); a non-empty answer to "what sensitive data appeared here, and what would you not paste into Copilot in a real version of this scenario."
 - **Tier 2 (AI-graded rubric):** are the stated corrections actually right, and does the sensitive-data answer land §12's actual teaching point - "enterprise licence is not synonymous with safe to paste" - specifically, not as a generic platitude.
 
 Full design: [`docs/workshop-design.md`](../../docs/workshop-design.md) §7, Module 02 row.
 
 ## Takeaway
 
-A verification-checklist prompt pack - a reusable pre-flight checklist for what to check before trusting or sharing a Copilot output. Packaged by Coachgremlin once the gate is met.
+A verification-checklist prompt pack - a reusable pre-flight checklist for what to check before trusting or sharing a Copilot output. Prepared for you once the exercise is built and you complete the gate.
 
 ## Stop condition (placeholder)
 
@@ -37,4 +37,4 @@ The learner's verification memo satisfies Tier 1's checklist, and Tier 2's rubri
 
 ---
 
-> **Skeleton only.** This module has a decided question, arc position, gate shape, and takeaway shape. It has no authored exercise, fixture, or grading prompt yet - that's Coachgremlin's job, run later. See [`modules/README.md`](../README.md) for workshop-wide status.
+> **Skeleton only.** This module has a decided question, arc position, gate shape, and takeaway shape. It has no authored exercise, fixture, or grading prompt yet - the workshop team will build that later. See [`modules/README.md`](../README.md) for workshop-wide status.

@@ -14,7 +14,7 @@ Sixth module. Prerequisite: [Module 03](../03-anatomy-of-a-working-prompt/README
 - Use the Analyst agent to accelerate analysis, while verifying its output rather than pasting it uncritically (the Module 02 habit).
 - Recognize when an analysis slide has drifted from factual reporting into recommendation-flavored language.
 
-## Exercise material to draw from (not a spec - Coachgremlin authors the real exercise later)
+## Exercise material to draw from (not a spec - the workshop team authors the real exercise later)
 
 AB-730 outline bullet 3.1.4, plus Researcher/Analyst agent product coverage (subject breadth, not itself an outline bullet); Microsoft's own "[Exercise - Analyze and visualize data with Microsoft Copilot](https://learn.microsoft.com/en-us/training/modules/analyze-visualize-data-copilot/)" is real, verified exercise material to draw from (not a spec to copy). `fixtures/` (Sam Wheat's Excel data handoff, historical figures only) does not exist yet.
 
@@ -27,7 +27,7 @@ Full design: [`docs/workshop-design.md`](../../docs/workshop-design.md) §7, Mod
 
 ## Takeaway
 
-An Excel/PowerPoint analysis prompt pack. Packaged by Coachgremlin once the gate is met.
+An Excel/PowerPoint analysis prompt pack. Prepared for you once the exercise is built and you complete the gate.
 
 ## Stop condition (placeholder)
 
@@ -35,4 +35,4 @@ The learner's deck and the Analyst's saved initial output satisfy Tier 1's check
 
 ---
 
-> **Skeleton only.** This module has a decided question, arc position, gate shape, and takeaway shape. It has no authored exercise, fixture, or grading prompt yet - that's Coachgremlin's job, run later. See [`modules/README.md`](../README.md) for workshop-wide status.
+> **Skeleton only.** This module has a decided question, arc position, gate shape, and takeaway shape. It has no authored exercise, fixture, or grading prompt yet - the workshop team will build that later. See [`modules/README.md`](../README.md) for workshop-wide status.

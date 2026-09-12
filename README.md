@@ -19,7 +19,7 @@ The module arc is designed to map onto AB-730's own published skills outline - d
 
 Work through the modules in order - see [`modules/README.md`](modules/README.md) for the full arc. Each module states what you'll produce and what you get to keep afterward (a personal, reusable set of prompts for that part of your job).
 
-> **Current status: skeleton only.** The design (arc, gates, scenario) is complete and has been through a full review; the actual exercises, fixtures, and grading prompts don't exist yet. Watch `docs/build-log/` for progress, or [open an issue](https://github.com/coderturtle/copilot-fluent/issues) to ask.
+> **Current status: skeleton only.** The design (arc, gates, scenario) is complete and has been through a full review; the actual exercises, fixtures, and grading prompts don't exist yet. Watch `docs/build-log/` for progress, or reach out using the contact method below to ask.
 
 ## What you keep
 
@@ -31,10 +31,9 @@ Each module leaves you with a personal, reusable prompt pack for that part of yo
 
 ## Something wrong?
 
-This is early and imperfect by design. If a module reduces to "read this, then move on" instead of a real gate, or a link here is broken, [open an issue](https://github.com/coderturtle/copilot-fluent/issues).
+This is early and imperfect by design. If a module reduces to "read this, then move on" instead of a real gate, or a link here is broken, we want to know. Found a problem? Email `TODO-add-contact-email@example.com` <!-- placeholder: coderturtle to fill in a real contact address before this ships publicly --> or ask your workshop administrator - no GitHub account needed.
 
 ## Key docs
 
-- [Workshop Design](docs/workshop-design.md): audience, AB-730 curriculum research, gate design, full module arc
-- [Maintainers](docs/maintainers.md): internal/agent-facing docs, classification, documentation contract
+- [Maintainers](docs/maintainers.md): internal/agent-facing docs, classification, documentation contract, and pointers to the underlying design docs - for anyone working on the workshop itself, not required reading to take it
 

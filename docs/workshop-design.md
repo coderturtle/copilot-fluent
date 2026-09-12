@@ -20,6 +20,8 @@ Hard prerequisite: a licensed enterprise Microsoft 365 Copilot tenant seat with 
 
 Self-paced, public — same as all four priors. New wrinkle, named explicitly: the published site is the **primary learner surface** (a no-git audience reads modules on the website, not the repo), not a maintainer build journal with the repo as the real front door. Site implementation itself is Phase 4's deliverable (Astro site, deploy workflow), not this design doc's — see the reconciled implementation plan's Phase 4 section.
 
+**Rough total time commitment, stated for a "busy professional" audience:** budget roughly 7-9 hours across all nine modules once real content exists, unevenly distributed (the Module 09 capstone is clearly the longest single sitting; see `modules/README.md`'s arc table for a per-module breakdown). Named explicitly as an estimate, not a commitment — no module has authored content yet, so this is a judgment call based on each module's planned exercises, re-checkable once real content is built.
+
 ## 4. Subject vs. method
 
 Per the Gremlin's "Variant: Tech/Language Workshops" discipline (`workshop-gremlin.md`) — subject and method are named separately even though this isn't a tech/language workshop, because the same discipline applies to any workshop where the two aren't identical.
