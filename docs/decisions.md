@@ -1,4 +1,4 @@
-# Decisions: Copilot Productivity Workshop
+# Decisions: Copilot Fluent
 
 ## ADR Log
 

@@ -1,4 +1,4 @@
-# Risks: Copilot Productivity Workshop
+# Risks: Copilot Fluent
 
 ## Risk Register
 

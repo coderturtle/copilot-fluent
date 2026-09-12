@@ -1,7 +1,7 @@
 # Walkthrough: {Session Title}
 
 **Date:** YYYY-MM-DD
-**Project:** Copilot Productivity Workshop
+**Project:** Copilot Fluent
 **Prompt / Session:** N
 
 ## What changed in plain English
@@ -10,7 +10,7 @@
 
 ## The simple analogy
 
-## How this ties to Copilot Productivity Workshop
+## How this ties to Copilot Fluent
 
 ## How this ties to the Hekton factory vision
 

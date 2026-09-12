@@ -1,4 +1,4 @@
-# Copilot Productivity Workshop — Plain-English Project Walkthrough
+# Copilot Fluent — Plain-English Project Walkthrough
 
 ## What this project is in one paragraph
 

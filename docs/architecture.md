@@ -1,4 +1,4 @@
-# Architecture: Copilot Productivity Workshop
+# Architecture: Copilot Fluent
 
 ## Overview
 

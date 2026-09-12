@@ -1,4 +1,4 @@
-# Next Actions: Copilot Productivity Workshop
+# Next Actions: Copilot Fluent
 
 ## Immediate
 
