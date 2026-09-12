@@ -20,7 +20,7 @@ AB-730 outline bullets 1.1.1-1.1.3, 1.1.5 (`docs/workshop-design.md` §6). Micro
 
 ## Required gate (placeholder - real checklist and grading prompt written later)
 
-- **Tier 1 (required-output checklist):** two saved transcripts of the identical prompt - one referencing a supplied firm-overview fixture, one not - where the grounded transcript contains ≥3 of a pre-registered, grading-only list of 5 exact strings in the fixture, all absent from the ungrounded one; a closed-set exercise labeling 4 short scenario descriptions "chat" or "agent" against a published answer key.
+- **Tier 1 (required-output checklist):** two saved transcripts of the identical prompt [self-attested that both runs are genuine] - one referencing a supplied firm-overview fixture, one not - where the grounded transcript contains ≥3 of a pre-registered, grading-only list of exactly 5 exact strings in the fixture (2 client names, 1 founding year, 1 AUM figure, 1 office address), all absent from the ungrounded one; a closed-set exercise labeling 4 short scenario descriptions "chat" or "agent" against a published answer key.
 - **Tier 2 (AI-graded rubric):** app-capability comparison notes naming ≥2 real differences between 2 named M365 apps.
 
 Full design: [`docs/workshop-design.md`](../../docs/workshop-design.md) §7, Module 01 row.

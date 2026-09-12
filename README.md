@@ -1,12 +1,12 @@
 # Copilot Fluent
 
-Most enterprise Microsoft 365 Copilot seats get used as a fancier search box. Microsoft's own official prep for the AB-730 certification helps, but it's ungraded, scattered across separate modules, and covers roughly one of the exam's three skill areas. Copilot Fluent is a self-paced workshop that gates you on producing real work, not reading about it, across all three.
+Most enterprise Microsoft 365 Copilot seats get used as a fancier search box. Microsoft's own official prep for the AB-730 certification helps and does include hands-on exercises, but they're ungraded and spread across multiple separate modules with no shared thread between them. Copilot Fluent is a self-paced workshop that gates you on producing real work, not reading about it, inside one continuing story.
 
 ## What this is
 
 Nine modules, one continuing fictional workplace (a boutique financial-advisory firm), real M365 apps. Every module ends with two checks: a required-output checklist (did you actually produce the thing, with the properties it needed) and an AI-graded rubric (is it good). No module advances on "read this, then move on."
 
-The module arc is mapped directly onto AB-730's own published skills outline - draft business content, manage prompts and conversations, build a first no-code agent, verify AI output instead of trusting it blindly. The goal is to leave you ready to sit AB-730 for real, not just to have read about Copilot.
+The module arc is designed to map onto AB-730's own published skills outline - draft business content, manage prompts and conversations, build a first no-code agent, verify AI output instead of trusting it blindly. It's built to prepare you for that exam, not just to have read about Copilot - not a guarantee, and completing this workshop on its own doesn't credential anything (see "Why AB-730" below).
 
 **Who it's for:** non-technical knowledge workers with a licensed enterprise Microsoft 365 Copilot seat (the paid add-on, not the free baseline Copilot Chat). No git, no command line, no coding background assumed - you work through this from a website, using the M365 apps you already have.
 

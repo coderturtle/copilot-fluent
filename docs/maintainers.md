@@ -19,7 +19,7 @@ This repo is public-capable and was scaffolded without the factory's internal le
 ## Implementation Status
 
 - 2026-09-12 — Scaffolded as factory-output (as `copilot-productivity-workshop`). Naming pass complete: **Copilot Fluent**, renamed same day. Scenario named: **Kellerman & Castle**. `docs/workshop-design.md` complete (audience, AB-730 curriculum-anchor research, two-tier gate design, 9-module arc mapped to all 30 AB-730 leaf bullets), hardened through 3 cycles of doubt-driven development (single-model + Codex cross-model each cycle — see `docs/decisions.md` for what each cycle caught). First [Workshop Review Panel](review-panel/2026-09-12-initial-design.md) pass complete against the naming + design docs — all seven personas returned distinct findings, six of nine action-list items applied same-pass (most substantive: Module 03, the hard prerequisite for the whole back half of the arc, was gated by nothing but self-attestation — now requires real Copilot-run evidence).
-- Module skeleton (`modules/`), brand layer (`docs/brand.md`), and this maintainers split are done. Build-log/Pages site is the remaining Completion Condition item — see [Next Actions](next-actions.md).
+- Module skeleton (`modules/`), brand layer (`docs/brand.md`), this maintainers split, and the build-log/Pages site (`site/`, `.github/workflows/deploy-pages.yml`) are all done, meeting the Workshop Gremlin's own Completion Condition. GitHub Pages enablement, custom-domain DNS, and the first real `workflow_dispatch` deploy are the remaining human-confirmed steps — see [Next Actions](next-actions.md).
 
 ## Documentation Contract
 

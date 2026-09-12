@@ -23,7 +23,7 @@ AB-730 outline bullets 2.2.1-2.2.4, 3.2.3. `fixtures/` (Oda Mae Brown's office-k
 
 ## Required gate (placeholder - real checklist and grading prompt written later)
 
-- **Tier 1 (required-output checklist):** given 5 named prior conversations, find/rename/add 3 to a named notebook (checkable membership); confirm 1 named chat deleted (checkable absence); a closed-set exercise selecting the 2 true statements out of 4 about memory vs. instructions against a published key; a personal-instructions text with exactly a bulleted list of ≥3 items under a stated heading.
+- **Tier 1 (required-output checklist):** given 5 named prior conversations, find and rename all 5 to a stated naming convention, then add exactly 3 of those 5 to a named notebook (exact-set comparison against the notebook's membership, not just any 3); confirm 1 named chat deleted (checkable absence); a closed-set exercise selecting the 2 true statements out of 4 about memory vs. instructions against a published key; a personal-instructions text with exactly a bulleted list of ≥3 items under a stated heading.
 - **Tier 2 (AI-graded rubric):** are the personal instructions specific enough to actually change future outputs, not generic platitudes.
 
 Full design: [`docs/workshop-design.md`](../../docs/workshop-design.md) §7, Module 04 row.

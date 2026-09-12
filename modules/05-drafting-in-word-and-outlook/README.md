@@ -21,7 +21,7 @@ AB-730 outline bullets 3.1.1-3.1.3; Microsoft's own "[Exercise - Draft and refin
 
 ## Required gate (placeholder - real checklist and grading prompt written later)
 
-- **Tier 1 (required-output checklist):** a new document created from a prompt alone, meeting a stated word-count floor (self-attested); a second document generated from the supplied fund note containing ≥3 transplanted named data points (exact strings from the source); a management summary within a stated word bound containing the source's exact top-line figure; zero matches against `docs/brand.md`'s prohibited-language list across both documents [not yet executable - `docs/brand.md`'s list exists, but this check needs Phase 4 tooling to run].
+- **Tier 1 (required-output checklist):** a new document created from a prompt alone, meeting a stated word-count floor (self-attested); a second document generated from the supplied fund note containing ≥3 transplanted named data points (exact strings from the source); a management summary within a stated word bound containing the source's exact top-line figure; zero matches against `docs/brand.md`'s prohibited-language list across both documents [not yet executable - `docs/brand.md`'s list exists, but no tooling exists yet to accept/scan a learner-submitted Word document against it; a Coachgremlin content-time dependency, not a Phase 3/4 scaffolding gap].
 - **Tier 2 (AI-graded rubric):** tone-appropriateness (client letter vs. internal summary); does either document drift into recommendation-flavored language even without a banned word.
 
 Full design: [`docs/workshop-design.md`](../../docs/workshop-design.md) §7, Module 05 row.

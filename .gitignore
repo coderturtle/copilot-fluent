@@ -29,5 +29,6 @@ node_modules/
 .venv/
 dist/
 build/
+.astro/
 *.bak.*
 .project-setup/

@@ -14,7 +14,7 @@ Eighth module. Prerequisite: [Module 03](../03-anatomy-of-a-working-prompt/READM
 
 - Decide when a template-based agent is the right tool versus a plain chat, with a stated reason.
 - Configure an agent's knowledge, instructions, capabilities, and suggested prompts.
-- Verify that an agent's answer actually draws on its configured knowledge, not just general Copilot knowledge.
+- Gather suggestive evidence (a control-run comparison) that an agent's answer draws on its configured knowledge, while understanding that this doesn't prove exclusivity - a named limit of this module's gate, not something to overstate.
 
 ## Exercise material to draw from (not a spec - Coachgremlin authors the real exercise later)
 

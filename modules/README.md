@@ -1,6 +1,6 @@
 # Modules
 
-Copilot Fluent's arc maps directly onto [AB-730](https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/)'s own published skills outline (3 domains, 30 leaf bullets), inside one continuing scenario: **Kellerman & Castle**, a boutique financial-advisory firm. Work through the modules in order - Module 03 is a hard prerequisite for Modules 04 through 08, since every later exercise assumes the prompt-construction skill it teaches.
+Copilot Fluent's arc is designed to map onto [AB-730](https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/)'s own published skills outline (3 domains, 30 leaf bullets), inside one continuing scenario: **Kellerman & Castle**, a boutique financial-advisory firm. Work through the modules in order - Module 03 is a hard prerequisite for Modules 04 through 08, since every later exercise assumes the prompt-construction skill it teaches.
 
 **Hands-on by design, not passive text.** No module here completes by reading it. Every module states a required gate before content exists - an artifact you produce, checked two ways. Every gate also has a stated **takeaway**: you keep something reusable, not just proof you did the exercise.
 
