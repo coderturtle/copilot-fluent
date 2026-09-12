@@ -1,4 +1,4 @@
-# Operating Model: Copilot Productivity Workshop
+# Operating Model: Copilot Fluent
 
 ## Classification
 

@@ -1,4 +1,4 @@
-# Copilot Productivity Workshop
+# Copilot Fluent
 
 **Classification:** factory-output
 **Lifecycle:** active
