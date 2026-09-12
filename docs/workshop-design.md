@@ -1,6 +1,6 @@
 # Workshop Design: Copilot Fluent
 
-Status: **draft, pre-Review-Panel**. Produced via a three-agent review chain (Fable plan → Codex adversarial critique with live repo access → Opus reconciliation) before any of this was written, then authored here incorporating every confirmed correction. See `copilot-fluent-private/docs/reconciled-implementation-plan-2026-09-12.md` for the full chain's reconciliation summary and `docs/decisions.md` for the ADR trail.
+Status: **design complete, Review Panel pass complete, module/deliverable skeleton and site built** (2026-09-12) — content-building (Coachgremlin, one concept at a time) is the remaining, separately-run step; see `docs/next-actions.md`. Produced via a three-agent review chain (Fable plan → Codex adversarial critique with live repo access → Opus reconciliation) before any of this was written, then authored here incorporating every confirmed correction, then hardened through 3 cycles of doubt-driven development. See `copilot-fluent-private/docs/reconciled-implementation-plan-2026-09-12.md` for the full chain's reconciliation summary and `docs/decisions.md` for the ADR trail.
 
 ## 1. The one-line problem
 

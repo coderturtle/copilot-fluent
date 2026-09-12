@@ -7,7 +7,7 @@
 
 ## This Week
 
-- [ ] Write "Fifth Run" section back into `~/hekton/gremlins/workshop/workshop-gremlin.md`, including a new "Variant: Non-Engineering Audience Workshops" section (Phase 5, non-blocking)
+- [x] Write "Fifth Run" section back into `~/hekton/gremlins/workshop/workshop-gremlin.md`, including a new "Variant: Non-Engineering Audience Workshops" section (Phase 5, non-blocking) — done 2026-09-12, on branch `agent/claude/copilot-fluent-fifth-run-writeback` in `~/hekton`, hardened through a cross-model review pass before commit.
 - [ ] When authoring real module content, split `docs/workshop-design.md` §7's dense per-module prose (the Professional Technical Writer persona found Module 09's cell alone runs ~450 words) into the module's own README rather than carrying that density forward
 
 ## Later
