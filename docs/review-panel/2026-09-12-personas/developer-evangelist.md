@@ -1,0 +1,11 @@
+# Developer Evangelist — Review of `docs/workshop-design.md`
+
+**Top finding — the Easter egg is the single biggest miss.** Kellerman & Castle is a genuinely fun premise (a "boutique wealth-management firm run by Dirty Dancing/Point Break characters"), and burying it forever as an internal-only joke that "must never surface in learner-facing copy" throws away free virality. This is exactly the kind of detail that gets shared unprompted — it costs nothing to reveal *after* the capstone (a footer credit, a Module 09 reveal, an easter-egg page) without ever compromising the straight-faced professionalism of the exercises themselves. As scoped, it's 100% craft, 0% hook — a wasted asset for an evangelist specifically.
+
+**The name works, and better than its rejected siblings.** "Copilot Fluent" is a solid two-word pitch for this audience: everyone intuitively understands "fluent in a language," so "fluent in Copilot" reads instantly as an aspirational, non-intimidating outcome — no dev connotation. Compare the rejects: "Prompt Native" sounds like a developer credential, "The Assist" is forgettable, "Inbox Native" undersells the scope. Copilot Fluent is the right call for a non-technical buyer scanning a workshop list in five seconds.
+
+**Real friction, but it's structural, not cosmetic.** The hard prerequisite — a paid enterprise Copilot seat, not free Copilot Chat — means someone can hear the pitch, get excited, and then discover they can't actually start because their org hasn't licensed it. That's friction no tagline fixes; worth flagging loudly to whoever owns distribution, since it narrows word-of-mouth to people who already have access.
+
+**What's genuinely compelling, and should lead the pitch:** positioning against AB-730's own official prep — "gated, not just hands-on," one continuous story instead of scattered ungraded units — is a strong, concrete differentiator against a real certification body, which lands well with knowledge workers who want résumé-legible outcomes, not vague "become an AI power user" framing.
+
+One copy risk to flag for later: internal vocabulary like "Tier 1/Tier 2," "self-attested," "coverage class" must never leak into learner-facing marketing — it reads as compliance paperwork, not an invitation.

@@ -1,0 +1,106 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../components/layout/BaseLayout.astro";
+
+const REPO = "https://github.com/coderturtle/copilot-fluent";
+const base = import.meta.env.BASE_URL;
+
+const recentEntries = (await getCollection("buildlog", ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title="Copilot Fluent: guide"
+  description="A self-paced workshop that gates you on producing real work with Microsoft 365 Copilot, not reading about it."
+>
+  <h1 class="text-3xl font-bold">Copilot Fluent</h1>
+  <p class="mt-2 text-lg opacity-80">
+    Get fluent with the Copilot your company already pays for.
+  </p>
+
+  <div class="post-body mt-10">
+    <p>
+      Most enterprise Microsoft 365 Copilot seats get used as a fancier search box. This workshop
+      gates you on producing real work with it instead, across nine modules, inside one continuing
+      fictional workplace. No git, no command line, no coding background assumed. Read a module
+      here, then do the exercise in your own M365 apps.
+    </p>
+
+    <h2>Who this is for</h2>
+    <p>
+      Non-technical knowledge workers with a licensed enterprise Microsoft 365 Copilot seat (the
+      paid add-on, not the free baseline Copilot Chat). Comfort with Word, Excel, PowerPoint,
+      Outlook, and Teams at a normal daily-user level is all that's assumed.
+    </p>
+
+    <h2>Two checks, every module</h2>
+    <p>
+      First, a <strong>required-output checklist</strong>: did you actually produce the thing,
+      with the properties it needed - a specific figure, a word count, a matching data point.
+      Checkable by counting, searching, or comparing, not a subjective "is this good" call.
+      Second, an <strong>AI-graded rubric</strong>: you paste your work against a supplied grading
+      prompt inside Copilot itself and get feedback. This second check is a new idea for this
+      workshop and untested against a real learner yet, named honestly rather than oversold.
+    </p>
+
+    <h2>Why AB-730</h2>
+    <p>
+      <a href="https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/">
+        AB-730, "Microsoft Certified: AI Business Professional,"
+      </a>{" "}
+      is a real, current, no-code Microsoft certification. This workshop's module arc is designed
+      to map onto its published skills outline rather than inventing its own sequence. It's
+      designed to prepare you to sit that exam, not a guarantee - completing this workshop on its
+      own doesn't credential anything; AB-730 is a separate, real, proctored exam you still have to
+      sit.
+    </p>
+
+    <h2>The runbook</h2>
+    <ol>
+      <li>Prerequisites: a licensed enterprise Microsoft 365 Copilot seat, and daily-user comfort with Word, Excel, PowerPoint, Outlook, and Teams.</li>
+      <li>
+        Start at <a href={`${base}modules/`}>the modules index</a>. It has the full arc, in order,
+        with what each one is about - the module pages themselves are still being built (see
+        Current status, below).
+      </li>
+      <li>
+        Work through the nine modules in order. Module 03 is a hard prerequisite for Modules 04
+        through 08 - every later exercise assumes the prompt-construction skill it teaches.
+      </li>
+      <li>
+        No module completes by reading it. Every module states a required gate, checked two ways.
+        If a module ever reduces to "read this, then move on," or a link here is broken, that's a
+        defect: <a href={`${REPO}/issues`}>open an issue</a>.
+      </li>
+    </ol>
+
+    <h2>Current status</h2>
+    <p>
+      All nine modules are skeleton only: a decided question, arc position, gate design, and
+      takeaway shape, but no authored exercise yet. That's real work still ahead, not a formality.
+      Watch the build log below for progress.
+    </p>
+  </div>
+
+  {
+    recentEntries.length > 0 && (
+      <>
+        <h2 class="mt-14 text-xl font-semibold">Recent from the build log</h2>
+        <ul class="mt-6 space-y-4">
+          {recentEntries.map((entry) => (
+            <li>
+              <a href={`${base}build-log/${entry.id}/`} class="entry-card">
+                <p class="entry-title text-lg font-semibold">{entry.data.title}</p>
+                <p class="mt-1 text-sm opacity-80">{entry.data.description}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p class="mt-6 text-sm opacity-70">
+          See the <a href={`${base}build-log/`} class="underline">full index</a>.
+        </p>
+      </>
+    )
+  }
+</BaseLayout>

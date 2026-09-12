@@ -68,5 +68,42 @@ architecture:
   risks: []
   owner: coderturtle
 notes:
-  - Teach non-technical knowledge workers to get real productivity value from enterprise Microsoft 365 Copilot (Work IQ, Copilot in Word/Excel/PowerPoint/Outlook/Teams, Researcher/Analyst agents) via hands-on exercises through a recurring fictional company scenario, gated by a required-output checklist plus an AI-graded rubric, with the module arc mapped to the AB-730 (Microsoft Certified: AI Business Professional) exam.
+  - Teach non-technical knowledge workers to get real productivity value from enterprise Microsoft 365 Copilot (Copilot in Word/Excel/PowerPoint/Outlook/Teams, Researcher/Analyst agents) via hands-on exercises through a recurring fictional company scenario, gated by a required-output checklist plus an AI-graded rubric, with the module arc mapped to the AB-730 (Microsoft Certified: AI Business Professional) exam. ("Work IQ" removed 2026-09-12 per a superseding ADR in docs/decisions.md — it's out of scope as a taught subject, since AB-730's outline never names it.)
+
+deployment:
+  pattern: github-pages-dns
+  subdomain_fqdn: copilot-fluent.coderturtle.io
+  root_domain: coderturtle.io
+  pages_host: coderturtle.github.io
+  repo: coderturtle/copilot-fluent
+  create_domain_verification: true
+  human_confirmed: true
+  hosted_zone_id: Z3DLQAZ6G5LV63
+  record_fqdn: copilot-fluent.coderturtle.io
+  verification_record_fqdn: _github-pages-challenge-coderturtle.copilot-fluent.coderturtle.io
+  applied_date: 2026-09-12
+  pages_enabled: true
+  custom_domain_set: true
+  protected_domain_state: verified
+  https_certificate_state: approved
+  https_enforced: false
+  # Recorded after a real `terraform apply` in agentic-infra-lab's
+  # github-pages-dns pattern (PR #14, hosted zone Z3DLQAZ6G5LV63). CNAME and
+  # TXT records confirmed live via `dig` against real public resolvers, not
+  # trusted from apply output alone. Pages enabled (build_type: workflow),
+  # custom domain set, and domain verification confirmed via
+  # `gh api repos/coderturtle/copilot-fluent/pages` directly (protected_domain_state:
+  # "verified", not inferred from pending_domain_unverified_at being null —
+  # see agentic-infra-lab's own module README for why that distinction matters).
+  # https_enforced is false; GitHub may flip this automatically once the
+  # approved certificate has propagated, or it may need a manual toggle —
+  # not yet confirmed either way, don't assume.
+  #
+  # site_content_live: false — this is the DNS/Pages infra layer only. The
+  # actual site returns 404 (`curl -sS -o /dev/null -w '%{http_code}'
+  # https://copilot-fluent.coderturtle.io/` → 404) because the deploy
+  # workflow and site content live only on the still-open PR
+  # coderturtle/copilot-fluent#2, not yet merged to main, and no
+  # `workflow_dispatch` deploy has ever been triggered. Do not read this
+  # block as "the site is live" — only the domain/Pages plumbing is.
 

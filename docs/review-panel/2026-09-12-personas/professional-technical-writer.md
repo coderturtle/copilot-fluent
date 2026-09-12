@@ -1,0 +1,11 @@
+# Professional Technical Writer — Review of `docs/workshop-design.md`
+
+**Cross-references mostly resolve correctly.** §7↔§8 (Tier 1/2), §7↔§11 (fallback pointers for Modules 03/04/07/08), §2↔§11 (baseline vs. additional features), and the Prerequisites column (03 as hub for 04-08) all check out against their targets. One genuine resolution gap: Module 02's cell says "not 3.2.3, see Module 04" — but nothing in Module 04's row or anywhere else explains *why* a reader would expect 3.2.3 there in the first place; the pointer answers a question the text never raised for a first-time reader.
+
+**Terminology has a near-collision that will trip readers.** §7 defines **`[self-attested]`** as a bracketed tag for confirmation-only evidence ("I saved/shared this," no proof) and applies it inline throughout the §7 table. §8 separately coins **"self-administered"** vs. **"mechanically graded"** — a different axis (does the learner hold the grading key, or does a grader need a withheld one). These two terms differ by one suffix, sound like the same concept, and — tellingly — "self-administered" and "mechanically graded" are *never actually applied as tags in the §7 table*, only `[self-attested]` is. A reader has to hold four near-synonyms simultaneously (mechanically checkable / self-administered / mechanically graded / self-attested) with only prose, not table markup, distinguishing three of them.
+
+**"N8" is an unexplained label** — "Module-count rationale (N8)" — with no key anywhere in the document. It reads as a leftover cross-reference to the drafting chain's own numbering, meaningless to a reader who never saw that history.
+
+**Self-correction volume is real but is consistently doing productive work, not noise** — each "an earlier draft claimed X" states the corrected fact plainly enough to be read standalone; you don't need the retracted version to understand the current one. The exception is §7's closing miscounts note, which is dense enough to require a re-read.
+
+**§7's table is functionally a set of embedded essays, not a table.** Module 09's row runs ~450 words with nested bold callouts; scanning across columns to compare modules is not realistic. This is a structural clarity problem the panel's design-quality lens would flag harder, but even purely as prose-craft, that density undermines the artifact's own claim to be a "table."
