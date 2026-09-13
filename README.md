@@ -19,7 +19,7 @@ The module arc is designed to map onto AB-730's own published skills outline - d
 
 Work through the modules in order - see [`modules/README.md`](modules/README.md) for the full arc. Each module states what you'll produce and what you get to keep afterward (a personal, reusable set of prompts for that part of your job).
 
-> **Current status: skeleton only.** The design (arc, gates, scenario) is complete and has been through a full review; the actual exercises, fixtures, and grading prompts don't exist yet. Watch `docs/build-log/` for progress, or reach out using the contact method below to ask.
+> **Current status: all nine modules have real content.** Every module, Module 09's capstone included, has a real exercise and a real gate. Watch `docs/build-log/` for progress on any later fixes, or reach out using the contact method below to ask.
 
 ## What you keep
 

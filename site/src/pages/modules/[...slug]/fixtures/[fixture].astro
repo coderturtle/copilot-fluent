@@ -1,0 +1,43 @@
+---
+import { getCollection, render } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import ModuleLayout from "../../../../components/layout/ModuleLayout.astro";
+
+// Fixtures collection ids look like
+// "01-starting-at-kellerman-and-castle/fixtures/firm-overview" (see
+// src/content/config.ts). Split that back into the module's own directory
+// (this route's [...slug]) and the fixture's own filename-without-".md"
+// (this route's [fixture]), so a fixture's URL nests under its module's own
+// URL: "/modules/01-.../fixtures/firm-overview/" - the exact shape RISK-0003
+// / RISK-0004's fixture-link fix (see docs/next-actions.md) needs, and the
+// same directory-index shape the remark plugin
+// (src/plugins/remark-relative-md-links.mjs) rewrites
+// "fixtures/firm-overview.md" links into.
+export async function getStaticPaths() {
+  const entries = await getCollection("fixtures");
+  return entries.map((entry) => {
+    const match = entry.id.match(/^(.*)\/fixtures\/([^/]+)$/);
+    const slug = match?.[1] ?? "";
+    const fixture = match?.[2] ?? entry.id;
+    return {
+      params: { slug, fixture },
+      props: { entry },
+    };
+  });
+}
+
+type Props = { entry: CollectionEntry<"fixtures"> };
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+
+// Fixtures are plain content, not maintainer-facing skeletons - no
+// skeleton-detection placeholder logic here (contrast
+// src/pages/modules/[...slug].astro): a fixture file only exists once a
+// module has been authored for real, so there is nothing to hide.
+const title = headings.find((h) => h.depth === 1)?.text ?? entry.id;
+---
+
+<ModuleLayout title={title}>
+  <Content />
+</ModuleLayout>

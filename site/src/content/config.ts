@@ -46,4 +46,30 @@ const modules = defineCollection({
   schema: z.object({}),
 });
 
-export const collections = { buildlog, modules };
+// Fixture files a module's own README links to for its hands-on exercise
+// (e.g. modules/01-.../fixtures/firm-overview.md). Modules 01-03 are the
+// first with real authored fixtures; their READMEs already link to these
+// with relative paths like "fixtures/firm-overview.md", but until this
+// collection existed there was no site route under modules/*/fixtures/* to
+// serve them - every fixture link 404'd on the published site, the primary
+// surface for this workshop's no-git learner audience. Same base/pattern
+// convention as `modules` above: read in place from modules/, not
+// duplicated into src/.
+//
+// generateId mirrors the module collection's own custom generateId (see
+// above) rather than relying on the glob loader's default: explicit here so
+// the id shape - "<module-dir>/fixtures/<filename-without-.md>", e.g.
+// "01-starting-at-kellerman-and-castle/fixtures/firm-overview" - is a
+// documented contract the route file (see
+// src/pages/modules/[...slug]/fixtures/[fixture].astro) can rely on, not an
+// implicit default that could shift with a future Astro version.
+const fixtures = defineCollection({
+  loader: glob({
+    pattern: "*/fixtures/*.md",
+    base: new URL("../../../modules", import.meta.url),
+    generateId: ({ entry }) => entry.replace(/\.md$/i, ""),
+  }),
+  schema: z.object({}),
+});
+
+export const collections = { buildlog, modules, fixtures };
