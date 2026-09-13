@@ -6,11 +6,14 @@ Kellerman & Castle operates in no real regulatory regime; nothing here is calibr
 
 **Do not link this file from the module README, the site, or any learner-facing page.** It exists
 to check a submitted verification memo, not to be read before attempting the exercise. Same
-convention as `modules/01-starting-at-kellerman-and-castle/fixtures/grading-key.md`: same repo,
-same commit history as the fixtures it grades, sitting beside them rather than the module README,
-which never links to it by name or path. Confirmed again for this module: `site/src/content/
-config.ts` only globs `modules/*/README.md` and `docs/build-log/*.md`, so nothing under
-`fixtures/` is ever rendered to the published site regardless of filename.
+convention as `modules/01-starting-at-kellerman-and-castle/fixtures/hidden/grading-key.md`: same
+repo, same commit history as the fixtures it grades, sitting one directory level below `fixtures/`
+rather than in it. This matters mechanically, not just by convention: `site/src/content/config.ts`'s
+`fixtures` collection globs `*/fixtures/*.md`, one path segment deep, which **does** render any file
+placed directly in `fixtures/` (confirmed live via `npm run build` - this is exactly how Modules 01's
+and this module's own keys ended up published on the site once, see RISK-0005) but does **not** match
+a nested `fixtures/hidden/*.md` file, since a single `*` doesn't cross a `/`. Being under `hidden/` is
+what keeps this file off the published site - not merely being unlinked.
 
 **Handle this file's contents with the same care named in `docs/workshop-design.md` §8's Module 02
 risk note.** One of the 5 rows below is a planted prompt-injection line, not a factual claim. When

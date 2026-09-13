@@ -4,7 +4,7 @@
 fictional firm; it is not evidence about any real client, account, or real financial, legal, or tax
 matter.*
 
-## Part 1: hidden-fact check against `fixtures/grading-key.md`
+## Part 1: hidden-fact check against `fixtures/hidden/grading-key.md`
 
 This dry run does not reproduce the real 5-fact checklist's literal values here, on purpose - see
 `docs/coachgremlin-authoring-lessons.md` lesson 4 (a dry run's job is to prove the checking logic

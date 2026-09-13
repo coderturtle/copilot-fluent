@@ -1,7 +1,10 @@
 # Synthetic transcript - grounded run (illustrative placeholders, not the real key)
 
+*Simulation only. This is a fictional, constructed Copilot response, not a real captured session.
+Kellerman & Castle operates in no real regulatory regime; nothing here is calibrated to one.*
+
 **This transcript uses placeholder stand-in values, not the real 5-fact checklist from
-`fixtures/grading-key.md` (also now revealed to the learner directly in the module README, gated
+`fixtures/hidden/grading-key.md` (also now revealed to the learner directly in the module README, gated
 behind an honor-system honesty instruction).** The point of this dry run is to prove the counting
 logic works, not to publish a copy-pasteable "passing" answer in the same commit as the key itself -
 see `docs/coachgremlin-authoring-lessons.md` lesson 4.

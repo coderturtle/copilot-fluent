@@ -9,7 +9,7 @@ account, or real financial, legal, or tax advice.*
 No learner has attempted this module yet, and this session has no live Microsoft 365 Copilot
 tenant access to run the exercise for real. So this isn't a dry run of "does a real learner pass
 this exercise" - it's a dry run of the **grading logic itself**: given the hidden fact key in
-`../../modules/01-starting-at-kellerman-and-castle/fixtures/grading-key.md`, can a human or AI
+`../../modules/01-starting-at-kellerman-and-castle/fixtures/hidden/grading-key.md`, can a human or AI
 grader actually tell a plausibly-grounded Copilot answer apart from a plausibly-ungrounded one, and
 do the four chat-versus-agent scenario labels hold up under a "why, specifically" challenge rather
 than reading as arbitrary calls.

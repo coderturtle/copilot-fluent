@@ -1,5 +1,8 @@
 # Synthetic transcript - ungrounded run
 
+*Simulation only. This is a fictional, constructed Copilot response, not a real captured session.
+Kellerman & Castle operates in no real regulatory regime; nothing here is calibrated to one.*
+
 **Setup (synthetic, not a real captured session):** a brand-new chat, no prior messages, no
 document pasted in. The exact Part 1 prompt was sent as the very first message.
 
