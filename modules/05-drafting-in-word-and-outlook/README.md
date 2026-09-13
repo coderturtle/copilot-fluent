@@ -43,14 +43,16 @@ practice both muscles Copilot actually offers here:
 - **A management summary, built from Wade's note.** This one has to preserve real facts from the
   source rather than invent its own.
 
-Both of Microsoft's own product distinctions here are real and verified as of 2026-09-13, not
-recalled from memory: Copilot in Word "lets you generate a first draft from a prompt" with no source
-document at all, and separately, you can "reference a specific file, email, or meeting in your
-prompt" by typing `/` and the filename so Copilot draws from that document's actual content instead
-of guessing - per Microsoft's own "[Draft and refine business content with Microsoft
+Both of Microsoft's own product distinctions here are real, fetched live from Microsoft's own current
+documentation rather than recalled from memory: Copilot in Word "lets you generate a first draft from
+a prompt" with no source document at all, and separately, "to reference a specific file, email, or
+meeting in your prompt, type `/` in the Copilot pane and start typing the name" so Copilot draws from
+that document's actual content instead of guessing - per Microsoft's own "[Draft and refine business
+content with Microsoft
 Copilot](https://learn.microsoft.com/en-us/training/modules/draft-refine-business-content/)" training
-module, specifically its "Draft your content using Microsoft Copilot" unit. That module's own
-hands-on exercise unit is real, verified material to draw from, not a spec this module copies.
+module, specifically its "Draft your content using Microsoft Copilot" unit (page updated 2026-08-26).
+That module's own hands-on exercise unit is real, verified material to draw from, not a spec this
+module copies.
 
 ### Part A: the client letter, from a prompt alone
 
@@ -137,15 +139,21 @@ placeholders.
 > recommendation-language drift: does either document suggest a specific action with a specific
 > holding, judge whether something suits a particular person, or address how something would be
 > taxed - even without using an obviously flagged word like "recommend" or "suitable"? Recommendation
-> language can hide in phrasing and rhetorical framing rather than a single flagged word. For
-> example, a sentence shaped as a leading question - "Doesn't this history make now feel like the
-> right moment to take a closer look at your allocation?" - reads as recommendation-flavored through
-> its framing alone, even though it never names a specific action. Or a hedge that implies a course
-> of action through someone else's behavior - "It's worth noting how many long-tenured clients have
-> stayed invested through periods like this one." - nudges toward a conclusion without stating one
-> outright. Flag language shaped like either of those examples the same way you'd flag an explicit
-> recommendation, and for anything you flag, quote the specific sentence and say what about its
-> framing (not just its vocabulary) reads as recommendation-flavored. BEGIN-LETTER [paste your
+> language can hide in phrasing and rhetorical framing rather than a single flagged word - watch for
+> two shapes in particular, illustrated below with non-financial stand-ins so the illustration itself
+> doesn't become another instance of the problem it's describing. The first shape is a leading
+> question that presupposes the reader should reconsider something, the way "Doesn't a week like this
+> make you feel like today's the day to sign up for the marathon?" nudges a reader toward a decision
+> without ever phrasing it as an instruction. The same shape aimed at a client's finances - a question
+> that presupposes now is the moment to revisit a position, without ever naming the position or the
+> word "recommend" - is exactly what to flag here. The second shape is citing what other
+> similarly-situated people did as tacit encouragement to do the same, the way "so many other members
+> renewed after a year like this one" nudges toward renewing without ever stating it as advice. The
+> same shape aimed at a client's finances - citing what other clients did with their own money as a
+> reason to feel reassured about staying the course - is the financial equivalent to flag. Flag
+> language shaped like either pattern the same way you'd flag an explicit recommendation, and for
+> anything you flag, quote the specific sentence and say what about its framing (not just its
+> vocabulary) reads as recommendation-flavored. BEGIN-LETTER [paste your
 > client letter here] END-LETTER BEGIN-SUMMARY [paste your management summary here] END-SUMMARY
 
 This asks a grader to read for framing and implication, not just to scan for a banned word list -
@@ -188,16 +196,14 @@ AI-graded pass on tone and language confirms both documents hold up.
 
 ---
 
-> **What this module's own dry run does and doesn't prove.** Before shipping this module, its
-> checking logic (not a real learner's attempt - nobody has run this exercise yet) was checked by
-> hand: one constructed "good" summary and one constructed "naive" summary were checked against the
-> word-bound, transplanted-data-point, and top-line-figure rules to confirm those rules actually tell
-> them apart, and the tone/recommendation-language grading prompt was checked by hand against both a
-> constructed clean pair of documents and a constructed pair carrying the subtle framing problem
-> described above. The product claims about drafting from a prompt alone and drafting from a
-> referenced file were fetched live from Microsoft's own current documentation, not recalled. None of
-> this confirms how a real learner, with real Copilot access, actually performs against this
-> exercise, or that a live AI grader run would reach the same verdict this hand-check did - both
-> remain untested, the same honesty this workshop applies to every other module's gate. (The internal
-> record of that check is part of this workshop's own build history, not something you need to read
-> to do the exercise.)
+> **What the checks above can and can't tell you.** The word-bound, transplanted-data-point, and
+> top-line-figure checks are mechanical: they can tell you whether your summary has the right number
+> of exact strings copied from Wade's note and the right word counts, the same way a spell-checker can
+> tell you a word is misspelled. They can't tell you whether you actually ran the two prompts for
+> real instead of writing the documents by hand, and they can't tell you whether either document reads
+> as recommendation-flavored to an outside reader - that's what the AI-graded pass and your own final
+> read are for. Passing every check here is good evidence you built the habit of drafting from a real
+> source and watching for subtle framing problems; it isn't proof against someone determined to fake
+> it, the same honest limit this workshop names on every self-checked exercise. The product claims
+> above about drafting from a prompt alone and drafting from a referenced file are cited from
+> Microsoft's own current documentation, not recalled from memory.

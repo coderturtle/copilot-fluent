@@ -11,6 +11,10 @@ reference note, not client-facing correspondence - it is a plain factual record 
 older fund vehicles have been, for whoever picks up these relationships next. Nothing below says
 what anyone should do about any of it; that's on purpose.*
 
+*This note is a workshop exercise fixture, written against fictional data for this exercise only.
+Reusing this format, or the drafting prompts built around it, against a real client's real document
+is your own regulated activity, not something this workshop can vouch for.* <!-- brand-lint-ignore: disclaimer naming what this fixture is not, per docs/brand.md's escape hatch for stating a rule by naming the phrase it excludes -->
+
 ---
 
 To the team,
