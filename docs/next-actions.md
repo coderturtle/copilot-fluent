@@ -4,6 +4,7 @@
 
 - [ ] **Blocking content-time dependency:** re-verify §12's DLP/Purview claims against Microsoft's live compliance documentation before any of it reaches learner-facing module content — flagged by both the design doc itself and the Security-Conscious Reviewer persona as not yet independently checked
 - [ ] Design the actual reveal mechanism for the Kellerman & Castle Easter egg (human-confirmed 2026-09-12: reveal once, post-capstone) — footer credit, Module 09 postscript, or a dedicated page
+- [ ] **RISK-0005:** move Module 01's and Module 02's `fixtures/grading-key.md` into a path the site's `fixtures` collection glob (`*/fixtures/*.md`) doesn't match (e.g. `fixtures/hidden/`, the convention Module 07 established for its own hidden key) and update both modules' internal references and their now-stale "nothing under fixtures/ is ever rendered" claims — confirmed by an actual `npm run build` that both files currently render on the published site in the clear, defeating both modules' honor-system reveal design. See `docs/risks.md` and `docs/decisions.md`'s 2026-09-13 Module 07 row.
 
 ## This Week
 
