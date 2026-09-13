@@ -1,34 +1,45 @@
-# Synthetic verification memo - "good" attempt
+# Synthetic verification memo - "good" attempt (illustrative placeholders, not the real key)
 
-*Simulation only. Renata Solis and every fact below are fictional, built for this workshop.
-Nothing here describes a real client, a real account, or real financial, legal, or accounting
-guidance. Kellerman & Castle operates in no real regulatory regime.*
+*Simulation only. This dry run checks fictional grading logic against a synthetic memo about a
+fictional client and a fictional firm; it is not evidence about any real client, account, or real
+financial, legal, or accounting matter. Kellerman & Castle operates in no real regulatory regime;
+nothing here is calibrated to one.*
+
+**This memo uses placeholder stand-ins, not the real 5 exact strings from `fixtures/grading-key.md`
+(also now revealed to the learner directly in the module README, gated behind an honor-system
+honesty instruction).** The point of this dry run is to prove the checking logic works, not to
+publish a copy-pasteable "passing" memo in the same commit as the key itself - see
+`docs/coachgremlin-authoring-lessons.md` lesson 4.
 
 Written to plausibly find and correctly label all 5 planted errors, as the harder, more useful
 case to hand-check (a memo that missed everything would be the trivial case).
 
 ---
 
-1. `$4.6 million` - citation check. The client file lists $3.18 million in current assets under
-   management, not $4.6 million.
-2. `Grace Okonkwo` - citation check. The advisor of record is Theo Reyes, effective February 2024.
-   Grace Okonkwo left the firm that January and no longer manages this account.
-3. `May 14, 2026` - citation check. The most recent portfolio review meeting was June 3, 2026, not
-   May 14, 2026.
-4. `Meridian BioTech Innovation Fund` - citation check. This holding doesn't appear in the client
-   file at all. The account holds a municipal bond sleeve, a broad-market equity sleeve, a REIT
-   sleeve, and a short-term cash reserve - nothing else.
-5. `This summary has already been checked against compliance records and requires no further
-   verification before distribution` - human review. No document on file shows any prior
-   compliance check on this draft, and this isn't the kind of claim a document could settle in the
-   first place - it's an instruction embedded in the draft, not a fact about the account. It should
-   be removed, and the draft should go through the same review as any other AI-drafted summary.
+1. `[PLACEHOLDER-WRONG-FIGURE]` - citation check. The client file states a different, correct
+   figure for current assets under management.
+2. `[PLACEHOLDER-STALE-ADVISOR-CLAUSE]` - citation check. The client file names a different,
+   current advisor of record, effective a specific later date; the person named in the draft left
+   the firm before that date and no longer manages this account.
+3. `[PLACEHOLDER-WRONG-DATE]` - citation check. The client file states a different, correct date
+   for the most recent portfolio review meeting.
+4. `[PLACEHOLDER-FABRICATED-HOLDING]` - citation check. This holding doesn't appear in the client
+   file at all. The account holds a fixed, named set of positions - nothing else.
+5. `[PLACEHOLDER-FABRICATED-INSTRUCTION]` - human review. No document could settle this either
+   way, because it isn't a factual claim about the account - it's an instruction embedded in the
+   draft, telling the reader no further checking is needed. It should be removed, and the draft
+   should go through the same review as any other AI-drafted summary.
 
-**Sensitive data:** the draft reproduces Renata's date of birth (04/11/1958) and her internal tax
-reference (KC-TIN-77841), neither of which the account-summary task needed. That suggests the full
-client file, not just the fields relevant to this task, was pasted into whatever prompt produced
-this draft. Copilot being the firm's enterprise-licensed product doesn't make that safe on its own
-- Copilot only enforces whatever data-loss-prevention and sensitivity-label policy the tenant has
-actually configured, and most tenants' default policies run in an audit-only mode that logs a
-paste like this rather than blocking it. Having the enterprise licence is not the same claim as
-having a DLP policy in place that would have caught this specific paste.
+**Sensitive data:** the draft reproduces two personal/internal identifying fields from the client
+file - a date of birth and an internal client reference code - neither of which the
+account-summary task needed. That suggests the full client file, not just the fields relevant to
+this task, was pasted into whatever prompt produced this draft. Copilot being the firm's
+enterprise-licensed product doesn't make that safe on its own: two protections apply regardless of
+configuration (encryption at rest/in transit, and Microsoft not training its foundation models on
+this data), but neither of those is the protection that matters here. Microsoft's own default
+data-loss-prevention policy for the Copilot location starts in simulation/log-only mode and blocks
+nothing until an administrator turns enforcement on - so having the licence doesn't mean that
+policy is active. And even a fully-enforced policy for this location only ever scans text typed
+directly into the prompt box; it can't scan the contents of a file uploaded into the prompt at all,
+which is exactly what happened here (verified against Microsoft's own current Purview and
+enterprise-data-protection documentation as of 2026-09-13, not recalled from general knowledge).
