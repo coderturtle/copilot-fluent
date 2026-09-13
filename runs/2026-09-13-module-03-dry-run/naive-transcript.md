@@ -1,12 +1,13 @@
 # Synthetic transcript - naive prompt (illustrative, not a captured session)
 
 *Simulation only. Every client and detail below is fictional, built for this workshop. Nothing here
-describes a real client, a real account, or real financial, legal, or tax advice. Kellerman &
+describes a real client, a real account, or real financial, legal, or accounting advice. Kellerman &
 Castle operates in no real regulatory regime; nothing here is calibrated to one.*
 
-**Setup (synthetic, not a real captured session):** a second, separate new Copilot chat, with the
-same two fixture files, `fixtures/monday-client-roster.md` and `fixtures/status-note-style-guide.md`,
-attached, then the module's supplied naive prompt sent as the first message.
+**Setup (synthetic, not a real captured session):** a second, separate new Copilot chat, with only
+`fixtures/monday-client-roster.md` attached - the style guide is deliberately left out of this chat
+entirely, per the module's Part 2 instructions - then the module's supplied naive prompt sent as the
+first message.
 
 **Prompt sent (the module's own supplied naive prompt, word for word):**
 
@@ -33,4 +34,6 @@ a flatly unhelpful one):**
 **Header check (see `check-result.md`):** none of the three required header phrases, "Meetings This
 Week," "Needs Johnny's Decision," or "Items to Route to Dalton," appear anywhere in this response -
 the same five facts are present, organized as one flat list by client rather than grouped under the
-style guide's three named sections, since the naive prompt never asked for that structure.
+style guide's three named sections. That's expected for two independent reasons this time, not one:
+the naive prompt never asked for that structure, and the style guide - the only fixture that contains
+those three exact phrases at all - was never attached to this chat in the first place.

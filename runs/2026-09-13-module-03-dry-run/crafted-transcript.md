@@ -1,7 +1,7 @@
 # Synthetic transcript - crafted prompt (illustrative, not a captured session)
 
 *Simulation only. Every client and detail below is fictional, built for this workshop. Nothing here
-describes a real client, a real account, or real financial, legal, or tax advice. Kellerman &
+describes a real client, a real account, or real financial, legal, or accounting advice. Kellerman &
 Castle operates in no real regulatory regime; nothing here is calibrated to one.*
 
 **Setup (synthetic, not a real captured session):** a new Copilot chat, with both

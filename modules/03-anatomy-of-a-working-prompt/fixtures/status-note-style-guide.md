@@ -2,7 +2,7 @@
 
 *Simulation only. Kellerman & Castle is a fictional firm built for this workshop, operating in no
 real regulatory regime; nothing here is calibrated to one. Nothing in this document describes a
-real client, a real account, or real financial, legal, or tax advice.* <!-- brand-lint-ignore: disclaimer naming what this fixture is not, per docs/brand.md's escape hatch for stating a rule by naming the phrase it excludes -->
+real client, a real account, or real financial, legal, or accounting advice.*
 
 *Written by Oda Mae Brown for whoever is putting Johnny's Monday note together that week - this
 week that's you. Johnny reads this before his first call, standing up, so it has to be scannable in
