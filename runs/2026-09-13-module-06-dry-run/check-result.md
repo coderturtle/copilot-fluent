@@ -1,10 +1,10 @@
 # Check result - Module 06 dry run, 2026-09-13
 
 *Simulation only. This dry run checks fictional checking logic against synthetic Analyst output and
-decks about a fictional firm; it is not evidence about any real client, account, or real financial,
-legal, or tax matter. Kellerman & Castle operates in no real regulatory regime; nothing here is
-calibrated to one. Reusing this format against a real client's real data is your own regulated
-activity, not something this workshop can vouch for.*
+decks about a fictional firm; it is not evidence about any real client, account, or real financial or
+legal matter. Kellerman & Castle operates in no real regulatory regime; nothing here is calibrated to
+one. Reusing this format against a real client's real data is your own regulated activity, not
+something this workshop can vouch for.*
 
 ## Part 1: the exact-row-match check on the four headline figures
 
@@ -12,21 +12,30 @@ Fixture values, for reference (from `fixtures/sam-wheats-portfolio-data.md`):
 
 | What | Fixture row | Exact fixture value |
 |---|---|---|
-| Molly's portfolio value, Q1 | R13 | $696,900 |
-| Molly's portfolio value, Q4 | R16 | $738,050 |
-| Best-performing fund in Q4, and its return | R4 | Kellerman Growth Fund, +5.1% |
-| That fund's allocation | A1 | 92% growth-oriented, 0% income-oriented, 8% cash |
+| Molly's portfolio value, end of Q1 (earliest closed quarter this fixture has, not a calendar-year start) | R13 | $696,900 |
+| Molly's portfolio value, end of Q4 | R16 | $738,050 |
+| Best-performing fund in Q4, and its return (a ranking derived by comparing all three of Molly's Q4 fund rows, not itself one fixture cell) | R4 | Kellerman Growth Fund, +5.1% |
+| That fund's allocation as of last quarter's rebalancing (fund-level data - Table 2 has no client column, so this is not a "Molly Jensen row") | A1 | 92% growth-oriented, 0% income-oriented, 8% cash |
 
-| Deck | Figure 1 (Q1 value) | Figure 2 (Q4 value) | Figure 3 (best fund + return) | Figure 4 (allocation) | Result |
+**The exact-match rule's parsing boundary, applied explicitly, not by unstated intuition:** a figure
+passes only if it appears as a plain, unqualified statement of the fixture's value - the exact digits
+and symbol, with no hedge or qualifying word ("roughly," "about," "approximately," "nearly," "over,"
+"~") directly modifying that same figure in the same clause. "Roughly $696,900" contains the exact
+substring "$696,900," but fails, because "roughly" modifies it directly in the same clause - the rule
+is about how the figure is presented, not whether the digits appear as a substring somewhere in the
+sentence.
+
+| Deck | Figure 1 (Q1-end value) | Figure 2 (Q4-end value) | Figure 3 (best fund + return) | Figure 4 (allocation) | Result |
 |---|---|---|---|---|---|
 | `good-deck.md` | $696,900 - exact match, R13 | $738,050 - exact match, R16 | Kellerman Growth Fund, +5.1% - exact match, R4 | 92% growth-oriented, 0% income-oriented, 8% cash - exact, full-row match, A1 | **Pass, 4 of 4 traceable** |
-| `naive-deck.md` | "roughly $696,900" - not exact (hedge word attached to the figure) | "about $738,000" - fails, not the fixture's exact $738,050 | Kellerman Growth Fund, +5.1% - exact match, R4, but framed with an added value judgment not present in the fixture | missing entirely; replaced with a "blended annual return" figure that traces to no fixture row at all (the fixture states no blended-return row, by design) | **Fail, 1 of 4 cleanly traceable, one figure absent, one figure untraceable by construction** |
+| `naive-deck.md` | "roughly $696,900" - fails the hedge-word rule above, even though the exact digits appear | "about $738,000" - fails, not the fixture's exact $738,050 | Kellerman Growth Fund, +5.1% - exact match, R4 | missing entirely; replaced with a "blended annual return" figure that traces to no fixture row at all (the fixture states no blended-return row, by design) | **Fail, 1 of 4 cleanly traceable (figure 3 only), two figures fail on hedging/rounding, one figure absent and replaced by an untraceable figure** |
 
 **Conclusion: the exact-row-match rule correctly separates a deck that reports the fixture's own
-numbers from one that reports a rounded, editorialized, and partly self-computed impression of them.**
-The naive deck's "$738,000" and "5.9%" are exactly the failure mode this module's operational
-definition is written to catch - each is plausible-sounding and not far off, which is what makes an
-eyeballed check insufficient and an exact-match rule necessary.
+numbers from one that reports a rounded and partly self-computed impression of them, and the
+hedge-word boundary above resolves the one case ("roughly $696,900") that would otherwise depend on
+unstated intuition.** The naive deck's "$738,000" and "5.9%" are exactly the failure mode this
+module's operational definition is written to catch - each is plausible-sounding and not far off,
+which is what makes an eyeballed check insufficient and an exact-match rule necessary.
 
 **A second thing this run checked: whether "the single best-performing fund in Q4" could be
 answered correctly by a shortcut instead of an actual per-quarter comparison.** Molly's three funds'
@@ -40,19 +49,31 @@ earlier draft of this fixture had Kellerman Growth winning three of four quarter
 let that exact shortcut land on the right answer by luck rather than by comparison; Legacy Balanced's
 Q1 return was set to +4.5% specifically to remove that shortcut.
 
-## Part 2: the critical-use comparison
+## Part 2: the critical-use comparison, against the redesigned rubric
 
-Comparing each deck against `analyst-initial-output.md`:
+This module's grading prompt no longer requires a deck to differ from Analyst's initial output to
+pass - a learner whose first response was already accurate throughout, and who says so specifically
+in their notes, should pass too. What it checks instead: (a) the final deck is at least as accurate as
+the initial output, checked against the fixture directly, not merely different from it, and (b) the
+learner's own written notes give a specific reason for each of the four headline figures and any other
+changed language - a correction, a caveat, an addition, or, just as validly, a specific "this was
+already correct" statement - not a blank or generic note.
 
-| Deck | Identifiable correction, caveat, or addition versus the initial output? | Result |
-|---|---|---|
-| `good-deck.md` | Yes - three concrete, specific differences: (1) both rounded values corrected to the fixture's exact figures, (2) the initial output's self-computed "blended annual return of approximately 5.9%" dropped entirely rather than restated, (3) the editorial aside ("a strong result worth noting") removed and a plain factual note substituted | **Pass** |
-| `naive-deck.md` | No - every figure and phrase, including the rounding and the editorial aside, is carried over unchanged | **Fail** |
+Comparing each deck (with its own constructed notes, from that file's own "Reviewer's own notes"
+section) against `analyst-initial-output.md`, checked against the fixture:
 
-**Conclusion: the comparison correctly distinguishes a deck built from Analyst's output with genuine
-review from one that reproduces it untouched.** This is the reason this module requires the initial
-output saved before any editing happens - without `analyst-initial-output.md` to compare against,
-neither deck's own text would reveal, on its own, whether it was reviewed or just forwarded.
+| Deck | Accuracy vs. initial output, checked against the fixture | Notes: specific and complete? | Result |
+|---|---|---|---|
+| `good-deck.md` | At least as accurate throughout: two hedged/rounded figures corrected to exact fixture values, the initial output's unsupported self-computed "blended annual return" dropped, the initial output's omitted income-oriented allocation figure added, and the initial output's unsupported ending-value-to-performance inference replaced with a claim the Return % rows actually support | Yes - `good-deck.md`'s own reviewer notes give a specific, fixture-grounded reason for every figure, including one (the best-performing-fund figure) explicitly confirmed unchanged because it was already exact | **Pass** |
+| `naive-deck.md` | Less accurate, not merely unchanged: keeps two hedged/rounded figures and a self-computed figure the fixture never states, and drops the required allocation figure entirely - a missing required figure is strictly worse than anything in the initial output | None - the deck's own file states plainly the initial output was pasted with no changes and no notes were written | **Fail** |
+
+**Conclusion: the redesigned rubric still correctly separates a genuinely reviewed deck from an
+unreviewed one, and it additionally lets a hypothetically already-accurate figure pass without forcing
+a learner to invent a change** - `good-deck.md`'s own kept note on the best-performing-fund figure
+("already exact, checked directly, left unchanged") demonstrates that path working as intended, not
+just asserted in the abstract. This remains the reason this module requires the initial output saved
+before any editing happens - without `analyst-initial-output.md` to compare against, neither deck's
+own text, nor its notes, would be checkable against anything.
 
 ## Part 3: tone and recommendation-language shape, reasoned by hand
 
@@ -69,25 +90,28 @@ verification, without ever writing the financial-domain instance out:
 
 **Stand-in 1 (leading question):** "Doesn't a time like this make you want to sign up for something
 longer?" Checked against the grading prompt's own stated bar (a caption phrased as a leading question
-that presupposes the reader should reconsider something): yes, this is exactly that shape - a
-question that presupposes its own answer, pointing toward a decision without ever stating one.
-**Reasoned result: the shape the check is meant to catch, correctly identified as such by the
-prompt's own stated criteria.** The prompt's text then states, in the abstract, that the same shape
-aimed at a client's finances (a caption presupposing now is the moment to revisit a position) is what
-to flag there - a generalization by structural analogy, not a constructed financial sentence to
-verify separately.
+about a specific figure or holding that presupposes the reader should reconsider or act on it): yes,
+this is exactly that shape - a question that presupposes its own answer, pointing toward a decision
+without ever stating one. **Reasoned result: the shape the check is meant to catch, correctly
+identified as such by the prompt's own stated criteria.** The prompt's own text states this structural
+rule generically ("flag any caption with this structure regardless of the specific words used")
+rather than writing out a financial-domain instance of it - this dry run does not construct one either,
+for the same reason.
 
 **Stand-in 2 (peer-behavior endorsement):** "look how many supporters gave again this year." Checked
-against the grading prompt's own stated bar (citing others' behavior as tacit encouragement to do the
-same): yes, this nudges toward repeating an action without ever stating it as advice. **Reasoned
-result: correctly identified as the shape to catch**, same structural-analogy generalization to the
-financial domain in the prompt's own text.
+against the grading prompt's own stated bar (a caption citing others' behavior as tacit reassurance to
+do the same, without stating it as advice): yes, this nudges toward repeating an action without ever
+stating it as advice. **Reasoned result: correctly identified as the shape to catch**, again via the
+prompt's own generic structural rule rather than a written-out financial example.
 
-**Control (should not be flagged):** the good deck's own Slide 3 line, "The portfolio's growth over
-the year was not evenly split across funds... This report states what happened this year; it isn't a
-comment on what to do with any of it next year." Checked against both shapes above: no leading
-question, no citation of others' behavior, no suggestion of a specific action - it states a fact and
-explicitly disclaims giving direction. **Reasoned result: not flagged, correctly.**
+**Control (should not be flagged):** the good deck's own Slide 3 text, "The three funds' own quarterly
+returns varied across the year: the Kellerman Growth Fund posted the strongest Q4 return of the three
+(+5.1%)... Ending-value changes reflect these returns plus any contributions or withdrawals Molly made
+during the year, which this data doesn't separate out. This report states what happened this year; it
+isn't a comment on what to do with any of it next year." Checked against both shapes above: no leading
+question, no citation of other clients' behavior, no suggestion of a specific action, and no causal
+claim beyond what the Return % rows support - it states facts, names a real limit on what the data
+shows, and explicitly disclaims giving direction. **Reasoned result: not flagged, correctly.**
 
 **Conclusion: the grading prompt's own stated criteria correctly separate the two flagged shapes from
 a clean factual control, reasoned by hand, using only the prompt's own non-financial stand-ins.** This
@@ -97,16 +121,19 @@ README and in the module's own footer note.
 
 ## Part 4: product-claim re-verification
 
-Sources fetched live in this session, 2026-09-13, not recalled:
+Sources fetched live in this session, checked 2026-09-13, not recalled. **This dry run's evidence is
+limited to the sources' own textual content, quoted directly below - it does not capture a
+screenshot or excerpt of each page's own revision metadata (an `ms.date` or "last updated" stamp), so
+this record doesn't independently prove a specific revision date for any of them.** Per lesson 14,
+the module README states these as "checked on 2026-09-13" rather than asserting a specific `ms.date`/
+`updated_at` pair this repo can't back up with captured evidence:
 
-- Microsoft Learn, "Analyze and visualize data using Microsoft Copilot" (module overview, `ms.date`
-  2026-08-21, `updated_at` 2026-09-07T17:14:00Z) -
+- Microsoft Learn, "Analyze and visualize data using Microsoft Copilot" (module overview) -
   `learn.microsoft.com/en-us/training/modules/analyze-visualize-data-copilot/`.
-- Microsoft Learn, "Generate insights using the Analyst Agent" (unit 3 of the same module, `ms.date`
-  2026-08-25, `updated_at` 2026-08-26T17:13:00Z) -
+- Microsoft Learn, "Generate insights using the Analyst Agent" (unit 3 of the same module) -
   `learn.microsoft.com/en-us/training/modules/analyze-visualize-data-copilot/3-generate-insights-analyst-agent`.
 - Microsoft Learn, "Exercise - Analyze and visualize data with Microsoft Copilot" (unit 3a of the same
-  module, `ms.date` 2026-09-03, `updated_at` 2026-09-07T17:14:00Z) -
+  module) -
   `learn.microsoft.com/en-us/training/modules/analyze-visualize-data-copilot/3a-exercise-analyze-visualize-data`.
 - The exercise's own hosted lab instructions (linked from unit 3a) - confirms the official lab's
   dataset (a `quarterly-sales-data.csv` of region/product/quarter/units/revenue/feedback), its
@@ -129,7 +156,11 @@ Analyst as the right tool for this exercise's task. **Confirmed as of 2026-09-13
 own comparison table states Copilot in Excel is best for "explore, chart, or transform data within an
 existing Excel spreadsheet," Analyst for "deep analysis across multiple files with citations and a
 polished report," and Copilot Chat for "general AI chat, web research, or quick summaries and drafts."
-**Confirmed as of 2026-09-13.**
+Microsoft's own distinction is specifically about *multiple files*, not one spreadsheet with multiple
+sheets - this module's instructions were checked against that distinction directly and now have the
+learner split the fixture's two tables into two separate files (two workbooks or two CSVs) rather than
+two sheets of one workbook, so the exercise genuinely lands in Analyst's own stated multi-file case
+rather than reusing this claim to justify a single-file task. **Confirmed as of 2026-09-13.**
 
 **Claim 3 - Copilot in PowerPoint's create-from-file and create-from-prompt mechanics.** The classic
 ribbon entry point's "Create presentation from file" flow is confirmed by Microsoft Support's own

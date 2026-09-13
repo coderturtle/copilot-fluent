@@ -2,35 +2,37 @@
 
 *Simulation only. Everything in this dry run - the fictional firm, the portfolio data, the
 constructed Analyst output and decks - is fictional and built for this workshop. Nothing here
-describes a real client, a real account, or real financial, legal, or tax advice. Kellerman & Castle
+describes a real client, a real account, or real financial or legal advice. Kellerman & Castle
 operates in no real regulatory regime; nothing here is calibrated to one. Reusing this format against
 a real client's real data is your own regulated activity, not something this workshop can vouch for.*
 
 ## What this run is, and what it isn't
 
 No learner has attempted this module yet, and this session has no live Microsoft 365 Copilot tenant
-access to run the Analyst agent for real. This run's job is narrower: confirm that the module's
-mechanically-checkable items (the exact-row-match rule on the four headline figures, and the
+access to run the Analyst agent for real. This run's job is narrower: check by hand that the module's
+mechanically-checkable items (the exact-row-match rule on the four headline line items, and the
 critical-use comparison against Analyst's saved initial output) actually distinguish a real pass from
-a real near-miss, and confirm by hand that the tone/recommendation-language grading prompt's own
+a real near-miss, and check by hand that the tone/recommendation-language grading prompt's own
 stated criteria would catch the subtle framing problem the module names, without ever constructing a
 real finance-domain instance of that problem to do it.
 
 This run:
 
 - Constructs one "Analyst initial output" (`analyst-initial-output.md`) with a realistic mix of
-  correct figures, rounded figures, an editorial aside, and a self-computed figure the fixture never
-  states directly - the kind of first response a learner would actually need to review, not an
-  obviously-broken strawman.
+  correct figures, rounded figures, an omitted allocation figure, and a self-computed figure the
+  fixture never states directly - the kind of first response a learner would actually need to review,
+  not an obviously-broken strawman.
 - Constructs one "good" deck (`good-deck.md`) that corrects the rounding, drops the self-computed
-  figure, and removes the editorial aside - with the reviewer's own notes on exactly what changed and
-  why, kept separate from the deck itself.
-- Constructs one "naive" deck (`naive-deck.md`) that pastes the initial output's rounded figures,
-  editorial aside, and self-computed figure through unchanged, and also drops one of the four required
-  figures entirely.
-- Runs the exact-row-match check and the critical-use comparison against both decks, and confirms the
-  fixture's own per-quarter fund returns don't let "which fund performed best in Q4" be answered by a
-  generally-strongest-fund shortcut instead of an actual comparison (`check-result.md`, Parts 1-2).
+  figure, adds the omitted allocation figure, and reframes the initial output's unsupported
+  ending-value-to-performance inference using the fixture's own Return % rows instead - with the
+  reviewer's own notes on exactly what changed (and what didn't, and why) kept separate from the deck
+  itself.
+- Constructs one "naive" deck (`naive-deck.md`) that pastes the initial output's rounded and
+  self-computed figures through unchanged, drops one of the four required figures entirely, and has no
+  reviewer notes at all.
+- Runs the exact-row-match check and the critical-use comparison against both decks, and checks that
+  the fixture's own per-quarter fund returns don't let "which fund performed best in Q4" be answered by
+  a generally-strongest-fund shortcut instead of an actual comparison (`check-result.md`, Parts 1-2).
 - Reasons by hand through the module's own two non-financial stand-in sentences against the
   tone/recommendation-language grading prompt's stated criteria, deliberately not constructing a
   finance-domain instance of the problem to test it - the same discipline Module 05's corrected

@@ -11,13 +11,14 @@ Molly Jensen - Annual Portfolio Review
 
 ## Slide 2: Headline numbers
 
-- Portfolio value, start of year: **roughly $696,900**
-- Portfolio value, end of year: **about $738,000**
-- Best-performing fund, Q4: **Kellerman Growth Fund, +5.1%, a strong result worth noting**
+- Portfolio value, end of Q1: **roughly $696,900**
+- Portfolio value, end of Q4: **about $738,000**
+- Best-performing fund, Q4: **Kellerman Growth Fund, +5.1%**
 - Blended annual return: **approximately 5.9%**
 
 ---
 
 **What happened when this deck was built (for this dry run only):** the initial Analyst output above
-was pasted onto the slide with no changes at all - same rounded figures, same editorial aside, same
-computed blended-return line.
+was pasted onto the slide with no changes at all - same rounded figures, same incomplete allocation
+figure dropped in favor of the initial output's self-computed blended-return line, and no year and no
+simulation-only marking on the title slide either.

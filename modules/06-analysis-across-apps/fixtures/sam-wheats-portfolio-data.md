@@ -3,7 +3,7 @@
 *Simulation only. Kellerman & Castle is a fictional firm built for this workshop, operating in no
 real regulatory regime; nothing here is calibrated to one. Every client name, fund name, value, and
 return figure below is invented for this workshop. Nothing in this document describes a real client,
-a real account, or real financial, legal, or tax advice.* <!-- brand-lint-ignore: disclaimer naming what this fixture is not, per docs/brand.md's escape hatch for stating a rule by naming the phrase it excludes -->
+a real account, or real financial or legal advice.*
 
 *This is a workshop exercise fixture, written against fictional data for this exercise only. Reusing
 this format, or the analysis prompts built around it, against a real client's real data is your own
@@ -11,13 +11,14 @@ regulated activity, not something this workshop can vouch for.* <!-- brand-lint-
 
 ---
 
-Pulled by Sam Wheat from the firm's internal performance ledger, last fiscal year, all four quarters
+Pulled by Sam Wheat from the firm's internal performance ledger, fiscal year 2026, all four quarters
 closed. This is a plain historical record - ending values and the funds' own quarterly returns, plus
 each fund's most recent allocation split. Nothing below says what anyone should do about any of it;
 that's on purpose. Client references below are internal working labels only, not account numbers.
 
-Two tables. Copy each into its own sheet in a new spreadsheet (or import as two CSVs) before you
-attach it anywhere - that's what makes this genuinely Excel-shaped rather than a document to read.
+Two tables. Copy each into its own separate file - two workbooks, or two CSVs - not two sheets in one
+workbook, before you attach them anywhere. That's what makes this genuinely two distinct files for the
+Analyst agent to reason across, not one document to read.
 
 ## Table 1: ending values and quarterly returns, by client and fund
 
