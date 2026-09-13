@@ -54,16 +54,17 @@ I keep meaning to sit down and fill out whatever form you need.
 get lost again. Let's start with the statement itself so Baby can see how we usually walk through
 one of these.
 
-[2:03 PM] **Johnny Castle:** So this is the Q3 statement. Nothing dramatic this quarter - it was a
-fairly typical one. A little bumpy in August across the board, and things settled back out by
-quarter close. Nothing in the account itself changed hands; this call is a check-in, not a
+[2:03 PM] **Johnny Castle:** So this is your Q2 statement - Q3 doesn't close out for a few more
+weeks yet, but it's the most recent one we can actually walk through today. Nothing dramatic in Q2 -
+it was a fairly typical quarter. A little bumpy in May across the board, and things settled back out
+by quarter close. Nothing in the account itself changed hands; this call is a check-in, not a
 transaction.
 
 [2:04 PM] **Molly Jensen:** That matches what I remember seeing when I glanced at it. The municipal
 bond sleeve looked about the same as always.
 
-[2:04 PM] **Johnny Castle:** Right, the Northbridge Municipal Income sleeve barely moved, which is
-sort of the point of holding it. The broad-market equity sleeve is where most of the quarter's
+[2:04 PM] **Johnny Castle:** Right, the Northbridge Municipal Income sleeve barely moved, same as
+it's looked the last few quarters running. The broad-market equity sleeve is where most of the quarter's
 bumpiness showed up, and the Averton Harbor REIT sleeve and the cash reserve both stayed roughly
 flat.
 
@@ -82,13 +83,12 @@ account, for what it's worth.
 [2:06 PM] **Johnny Castle:** I'll take that as a compliment. Anything on the statement itself you
 want to walk through line by line, or does the summary cover it?
 
-[2:07 PM] **Molly Jensen:** The summary's fine. Actually, could you get me a paper copy of the
-year-end statement once it's ready? I like having something physical in my file at home, and last
-year I had to ask twice before it showed up.
+[2:07 PM] **Molly Jensen:** The summary's fine. Actually, could you get me a paper copy of the Q2
+statement? I like having something physical in my file at home, and last quarter I had to ask twice
+before it showed up.
 
-[2:07 PM] **Johnny Castle:** That's easy - I'll get Molly the year-end account statement by Friday,
-September 11th, once operations closes out the file. I'll have it mailed the same way you got last
-year's.
+[2:07 PM] **Johnny Castle:** That's easy - I'll get Molly a paper copy of the Q2 account statement
+by Friday, September 11th. I'll have operations print and mail it the same way as last quarter's.
 
 [2:08 PM] **Molly Jensen:** Perfect, thank you.
 
@@ -122,7 +122,7 @@ you.
 
 [2:12 PM] **Molly Jensen:** Noted. No promises on when, but noted.
 
-[2:12 PM] **Baby Houseman:** Can I ask about the August dip you mentioned earlier? Was that
+[2:12 PM] **Baby Houseman:** Can I ask about the May dip you mentioned earlier? Was that
 specific to this account, or was it broader than that?
 
 [2:13 PM] **Johnny Castle:** Broader - it showed up across most diversified accounts we manage that

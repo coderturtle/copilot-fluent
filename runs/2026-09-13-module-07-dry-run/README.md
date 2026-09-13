@@ -19,29 +19,34 @@ Microsoft's own current documentation.
 This run:
 
 - Constructs one "good" recap (`good-recap.md`) that finds and correctly captures all 5 real action
-  items and excludes all 3 decoys.
-- Constructs one "naive" recap (`naive-recap.md`) that gets 3 of 5 items exactly right, loses
-  precision on a 4th (a vague deadline where the transcript gives an exact one), drops the 5th
-  entirely, and promotes one decoy to a fabricated action item with an invented deadline.
-- Runs the exact-string-plus-decoy check against both (`check-result.md`, Parts 1-2), by category
-  and match/fail rather than by quoting the real strings themselves.
+  items and excludes all 3 decoys, using real (though still fictional) text, not placeholder tokens.
+- Constructs one "naive" recap (`naive-recap.md`) that gets most items right, loses precision on
+  another (a vague deadline where the transcript gives an exact one), drops one entirely, and
+  promotes one decoy to a fabricated action item with an invented deadline - also real text, so the
+  match/fail result is actually demonstrated, not asserted.
+- Runs the exact-string-plus-decoy check against both (`check-result.md`, Parts 1-2), reporting
+  the result by count and pattern rather than by naming which owner, deliverable, or decoy produced
+  which outcome.
 - Reasons through the Page-building-and-sharing step's own honor-system nature honestly, rather
   than treating it as more checkable than it is (`check-result.md`, Part 3).
-- Re-verifies this module's product claims (Intelligent recap's transcript-grounding, Copilot
-  Pages' section structure, and how Page sharing works) against Microsoft's own current published
-  documentation, fetched live in this session (`check-result.md`, Part 4).
+- Re-verifies this module's product claims (Intelligent recap's actual scope and restrictions,
+  Copilot Pages' section structure, and how Page sharing works) against Microsoft's own current
+  published documentation, fetched live in this session (`check-result.md`, Part 4).
 
-## On why the real key still isn't reproduced here
+## On why the real key still isn't reproduced by name here
 
 Unlike Module 06's fixture (fully open to the learner from the start, no hidden key), this module's
 5 exact action-item strings are withheld until the learner commits to their own recap - the same
-shape as Modules 01 and 02. This dry run follows those two modules' own established discipline
-(`docs/coachgremlin-authoring-lessons.md` lesson 4): both synthetic recaps use placeholder
-stand-ins for each item's specific deliverable and date, and this file describes match/fail by
-category, never by quoting the real strings. This holds even though the module README itself
-later reveals the same table to a learner who has already written and saved their own recap - a
-dry run file sits outside that honor-system gate, and keeping it placeholder-only avoids it
-becoming a second, easier place to find the answer before committing to an attempt.
+shape as Modules 01 and 02. An earlier version of this dry run followed those two modules'
+placeholder-token discipline literally (`docs/coachgremlin-authoring-lessons.md` lesson 4) - but a
+placeholder can't actually be checked against anything, so that version's "5/5 exact match" claim
+was asserted, not demonstrated, which a cross-model review caught. This version keeps lesson 4's
+underlying goal (don't make this directory a second, easier place to find the answer before
+committing to an attempt) by a different means: `good-recap.md` and `naive-recap.md` now contain
+real text and are genuinely checked against the real key, but `check-result.md` - the file most
+likely to be skimmed as a summary - reports the outcome abstractly, by count and pattern, without
+naming which real owner or decoy is behind any given result, and without giving this module's
+internal reference key's own file path in a form a learner could navigate to.
 
 ## What this run does NOT prove
 
@@ -61,6 +66,7 @@ becoming a second, easier place to find the answer before committing to an attem
 ## Files
 
 - `good-recap.md` / `naive-recap.md` - the constructed recap pair for the exact-string-plus-decoy
-  check (placeholder stand-ins, not the real exact strings).
-- `check-result.md` - the hand-check of both recaps against the pre-registered key, the honest
-  reasoning on the honor-system Page step, and the product-claim re-verification.
+  check, using real (though still fictional) text checked against the real key.
+- `check-result.md` - the hand-check of both recaps against the pre-registered key, reported
+  abstractly (by count and pattern, not by owner or decoy identity), the honest reasoning on the
+  honor-system Page step, and the product-claim re-verification.
