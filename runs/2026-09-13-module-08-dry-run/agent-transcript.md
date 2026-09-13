@@ -1,4 +1,4 @@
-# Synthetic transcript: the configured agent ("Johnny's Team - Client Prep Notes")
+# Synthetic transcript: the configured agent ("Johnny's Client Prep Notes")
 
 *Simulation only. This is a constructed, hand-written example transcript for this workshop's own dry
 run - it is not a real Microsoft 365 Copilot session, and Kellerman & Castle, Johnny Castle, and every
@@ -6,7 +6,7 @@ detail below are fictional, built for a firm operating in no real regulatory reg
 calibrated to one. None of this is a real client, a real account, or real financial, legal, or
 accounting guidance.* <!-- brand-lint-ignore: disclaimer naming what this fixture is not, per docs/brand.md's escape hatch for stating a rule by naming the phrase it excludes -->
 
-**Agent:** Johnny's Team - Client Prep Notes (built from the My Company Policy template, grounded in
+**Agent:** Johnny's Client Prep Notes (built from the My Company Policy template, grounded in
 `fixtures/johnnys-team-client-prep-playbook.md`)
 
 **User:** What's the standard order of sections in one of our client-prep packets, and when does the

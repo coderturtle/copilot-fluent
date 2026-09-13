@@ -45,7 +45,7 @@ internal-process language:
 |---|---|---|
 | Instructions block (Part B) | Yes - explicitly declines client-facing drafting and any "what should a client do" question | None found |
 | Suggested prompt 1 ("What's our standard order of sections...") | Yes - asks about the team's own process | None found |
-| Suggested prompt 2 ("What internal steps do I still need to finish...") | Yes - asks about the preparer's own remaining work | None found |
+| Suggested prompt 2 ("According to the Playbook, who should I check with if a client's older holdings...") | Yes - asks about the team's own internal routing | None found |
 | Suggested prompt 3 ("Who on the team handles a Copilot Page...") | Yes - internal routing question | None found |
 | Suggested prompt 4 ("Summarize the Playbook's checklist...") | Yes - asks the agent to summarize its own knowledge source | None found |
 

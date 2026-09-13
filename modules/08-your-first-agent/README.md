@@ -119,11 +119,12 @@ In Microsoft 365 Copilot, select **New agent**, then choose the **My Company Pol
 
   > You help Johnny's team members prepare internally for an upcoming client review meeting at
   > Kellerman & Castle. Your only knowledge source is the attached Client Prep Playbook. You are for
-  > internal prep notes only - nothing you draft is ever sent to a client without a person rewriting
-  > it first. Answer using only what the Playbook actually states; if it doesn't cover something, say
-  > so rather than guessing. Never draft a client-facing letter, email, or anything that reads as
-  > advice about what a client should do with their own money - if someone asks you to, decline and
-  > say this agent is for internal meeting-prep steps only.
+  > internal prep notes only - you never draft anything a client would see, under any circumstance,
+  > not even as a draft someone else plans to rewrite before it goes out. Answer using only what the
+  > Playbook actually states; if it doesn't cover something, say so rather than guessing. Never draft a
+  > client-facing letter, email, or anything that reads as advice about what a client should do with
+  > their own money - if someone asks you to, decline and say this agent is for internal meeting-prep
+  > steps only.
 
 - **Capabilities:** turn on **Create documents, charts, and code** (Microsoft's own current label for
   this toggle) so the agent can assemble a draft prep-packet outline in the Playbook's own order when
@@ -133,7 +134,8 @@ In Microsoft 365 Copilot, select **New agent**, then choose the **My Company Pol
   reusable as-is:
 
   1. "What's our standard order of sections for a client-prep packet?"
-  2. "What internal steps do I still need to finish before my next quarterly review meeting?"
+  2. "According to the Playbook, who should I check with if a client's older holdings need context
+     that isn't in the current file?"
   3. "Who on the team handles a Copilot Page for a client meeting?"
   4. "Summarize the Playbook's checklist for someone covering a meeting-prep task for the first
      time."
@@ -145,9 +147,12 @@ against removing it - worth leaving in place here too, given this whole module's
 
 ### Part C: check your own instructions and prompts, honestly
 
-Nobody scans your agent's instructions or suggested prompts for you before you move on - that tooling
-doesn't exist yet, the same honest limit this workshop names wherever a check can't be reduced to a
-script. This is the one place in this module where the stakes are real: an agent scoped to "internal
+Nothing scans your agent's instructions or suggested prompts for you automatically, outside the checks
+this module itself walks you through - Microsoft's product has no tooling that does this passively for
+you yet, the same honest limit this workshop names wherever a check can't be reduced to a script. The
+hand-read below, and the AI-graded pass later in this module, are this module's own substitute for that
+missing tooling, not something that happens on its own. This is the one place in this module where the
+stakes are real: an agent scoped to "internal
 prep notes only" is one client-facing suggested prompt away from drafting recommendation-flavored
 content, and nothing else in this module's gate would catch that if it happened.
 
@@ -190,20 +195,27 @@ something this pair proves on its own.
 ## Required gate
 
 To move on, you need two things: a short checklist you check yourself, honestly, and one AI-graded
-pass on scope and usefulness.
+pass on scope, usefulness, and recommendation-language.
 
 ### A checklist you check yourself
 
 Nobody is watching you run any of this - it only works if you're honest with yourself about it.
 
 - A one-sentence reason exists for choosing Agent Store or a new agent for this specific need.
-- An agent exists, created from the **My Company Policy** template.
+- An agent exists, created from the **My Company Policy** template - or, if agent creation is blocked
+  entirely, a plain chat opened with the full instructions+knowledge+prompts block pasted as its first
+  message, per the tier-2 fallback in "If your tenant blocks part of this" below, named honestly as
+  the substitute rather than a real agent.
 - The agent's own Description field - not just this module page - states plainly that it's training
   material for a fictional firm. This is a mark on the artifact you actually built, not only a
-  disclaimer on the page you're reading it from.
+  disclaimer on the page you're reading it from. If you used the tier-2 fallback instead because agent
+  creation is blocked entirely, that same simulation-only statement appears as the first line of your
+  pasted block, standing in for a Description field that doesn't exist there.
 - The agent has at least one named knowledge source configured - the playbook fixture.
 - The agent has non-empty instructions and at least 3 suggested prompts, and at least one capability
-  is turned on.
+  is turned on - or, under the tier-2 fallback, your pasted block states the equivalent capability
+  directly (for example, that the agent may assemble a draft prep-packet outline in the Playbook's own
+  order when asked), since a plain chat has no capability toggle to turn on.
 - You read your own instructions and every suggested prompt back against recommendation-flavored and
   hype language, per Part C above, and it turned up nothing.
 - The agent has been shared with at least one named team member, or, if your tenant blocked that step,
@@ -219,7 +231,7 @@ agent rather than writing both transcripts by hand, the same honest limit this w
 self-checked exercise. This is a good-faith check for building the habit of grounding an agent in real
 knowledge and verifying that it worked, not an audited one.
 
-### An AI-graded pass on scope and usefulness
+### An AI-graded pass on scope, usefulness, and recommendation-language
 
 Paste the block below into Copilot, with your agent's name, instructions, suggested prompts, and a
 one-line description of who'd use it, typed in place of the bracketed placeholder.
@@ -275,13 +287,19 @@ to "No users," or to "Specific users/groups" that doesn't include you, you genui
 use any agent, not just this one. If that's you, here's a genuine substitute that still teaches this
 module's real skill, named honestly as a substitute rather than the real thing:
 
-1. Write the same instructions block from Part B, but add the Playbook's full text directly into it,
-   since there's no separate knowledge-source field in a plain chat.
-2. Add the same at least 3 suggested prompts as a plain list inside that same instructions block,
+1. Start the block with a one-line simulation-only marking as its very first line - for example,
+   "SIMULATION ONLY: training material for a fictional firm, not a real firm's operations." A plain
+   chat has no Description field, so this line is where that marking has to live instead.
+2. Write the same instructions block from Part B under that line, but add the Playbook's full text
+   directly into it, since there's no separate knowledge-source field in a plain chat. Also add one
+   explicit sentence stating the same capability Part B turns on - for example, "you may assemble a
+   draft prep-packet outline in the Playbook's own order when asked" - since a plain chat has no
+   capability toggle to turn on.
+3. Add the same at least 3 suggested prompts as a plain list inside that same instructions block,
    since there's nowhere else to put them.
-3. Open a brand-new Copilot chat, paste that entire block in as your first message, and then ask your
-   actual question.
-4. Every time you want to use this "agent" again, paste the same block in again, at the start of a
+4. Open a brand-new Copilot chat, paste that entire block - marking, instructions, capability
+   sentence, and prompts together - in as your first message, and then ask your actual question.
+5. Every time you want to use this "agent" again, paste the same block in again, at the start of a
    new chat, word for word. Nothing persists between sessions the way a real agent's configuration
    does.
 
@@ -319,14 +337,16 @@ something this workshop can vouch for.
 ## Stop condition
 
 Your one-sentence Agent-Store-or-new-agent reason exists; your agent is built from the My Company
-Policy template with a Description field that states plainly it's training material, the playbook
-fixture as its knowledge source, non-empty instructions, at least 3 suggested prompts, and at least
-one capability turned on; your own read of that instructions text and
+Policy template - or, if agent creation is blocked entirely, the tier-2 fallback's pasted block stands
+in for it - with a simulation-only marking (the Description field, or, under the tier-2 fallback, the
+pasted block's first line), the playbook fixture as its knowledge source, non-empty instructions, at
+least 3 suggested prompts, and at least one capability turned on (or, under the tier-2 fallback, the
+equivalent capability stated directly in the pasted block); your own read of that instructions text and
 every suggested prompt against recommendation-flavored and hype language turned up nothing; the agent
 has been shared with at least one named team member (or a named fallback tier applied honestly in its
 place); your agent's transcript contains the Playbook's exact wording for the packet order and timing
 rule, and a separate plain-chat transcript on the same question is confirmed not to; and the AI-graded
-pass above confirms both scope and usefulness.
+pass above confirms scope, usefulness, and the absence of recommendation-flavored language.
 
 ---
 
