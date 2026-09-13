@@ -11,8 +11,9 @@ your own regulated activity, not something this workshop can vouch for.* <!-- br
 
 ---
 
-Pulled by Sam Wheat from the firm's internal performance ledger for the quarter that just closed,
-fiscal year 2027's third quarter. This is a plain historical record for this one quarter only, not
+Pulled by Sam Wheat from the firm's internal performance ledger mid-way through the current quarter,
+fiscal year 2027's third quarter (figures current as of this pull, not a final quarter-end close).
+This is a plain historical record for this one quarter only, not
 the full-year pull Sam ran for Molly's fiscal year 2026 review - ending values and the funds' own
 quarterly returns, plus each fund's most recent allocation split. Nothing below says what anyone
 should do about any of it; that's on purpose. Client references below are internal working labels

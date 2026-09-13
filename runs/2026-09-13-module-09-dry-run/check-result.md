@@ -13,7 +13,7 @@ learner, not hidden, so quoted directly here the same way Module 06's own dry ru
 
 | What | Fixture row | Exact fixture value |
 |---|---|---|
-| Molly's portfolio value, Q3 2027 close | Q27-4 | $794,300 |
+| Molly's portfolio value, as of mid-Q3 2027 | Q27-4 | $794,300 |
 | Best-performing fund in Q3 2027, and its return (a ranking derived by comparing all three of Molly's Q3 2027 fund rows) | Q27-1 | Kellerman Growth Fund, +2.7% |
 | That fund's allocation as of Q3 2027's rebalancing | Q27-A1 | 89% growth-oriented, 3% income-oriented, 8% cash |
 

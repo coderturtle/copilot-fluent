@@ -92,7 +92,7 @@ answer below.
 
 | # | Exact phrase, drawn from the draft | Correct verification method | Correction |
 |---|---|---|---|
-| 1 | `$720,150` | citation check | The account note states Molly's total assets under management as of the Q3 2027 close are $794,300, not $720,150. |
+| 1 | `$720,150` | citation check | The account note states Molly's total assets under management as of mid-Q3 2027 are $794,300, not $720,150. |
 
 A high self-check score is a good sign you actually did the comparison - it isn't proof. This is a
 self-check for building the habit honestly, not an audited one, and it doesn't claim to be more than
@@ -130,8 +130,8 @@ note rather than paraphrase them into something looser:
 
 - It must contain **at least 3 exact data points transplanted word for word from the fixture** - a
   name, a date, or a figure, each copied exactly as the note states it.
-- One of those data points must be **the note's own top-line figure** - the 18.4% cumulative return
-  under Theo Reyes's management that the note opens with. If your summary doesn't contain that exact
+- One of those data points must be **the note's own top-line figure** - the cumulative return under
+  Theo Reyes's management that the note opens with. If your summary doesn't contain that exact
   figure, it's missing the one number the note itself flags as the number worth leading with.
 
 ### Part 6 (from Module 06, bound to the new fixtures): the traceable deck
@@ -226,7 +226,7 @@ Nobody is watching you run any of this - it only works if you're honest with you
   Conversations` notebook (or its named substitute).
 - Your summary exists, was generated with `fixtures/johnnys-q3-2027-account-notes.md` attached or
   pasted in, is no more than 150 words, and contains at least 3 exact transplanted data points
-  including the note's own 18.4% top-line figure.
+  including the note's own top-line figure.
 - Your deck exists with the required title slide, the headline-numbers slide holding exactly three
   labeled line items, and at least one further slide; each of the three line items traces to an
   exact row of `fixtures/sam-wheats-q3-2027-data-pull.md` per the definition above; Analyst's saved,

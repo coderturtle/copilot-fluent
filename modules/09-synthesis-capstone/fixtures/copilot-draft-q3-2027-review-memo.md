@@ -15,12 +15,12 @@ summary gets checked before distribution.*
 Here's a memo on Molly Jensen (Client Ref: [internal]) ahead of her Q3 2027 review meeting.
 
 Molly's account currently holds **$720,150** in total assets under management, spread across her
-municipal bond, equity, REIT, and cash positions. Theo Reyes has been the advisor of record since
-February 2024, and the relationship's cumulative return under his management stands at 18.4% - a
-figure Molly specifically asked to see at her last review.
+three funds. Theo Reyes has been the advisor of record since February 2024, and the relationship's
+cumulative return under his management stands at 18.4% - a figure Molly specifically asked to see at
+her last review.
 
-The account's holdings are unchanged since the prior review: the municipal bond sleeve, the
-broad-market equity sleeve, the REIT sleeve, and the short-term cash reserve. No changes were
-requested or made at the most recent meeting, held September 14, 2027.
+The account's holdings are unchanged since the prior review: the Kellerman Growth Fund, the Castle
+Income Fund, and the Legacy Balanced Fund. No changes were requested or made at the most recent
+meeting, held September 14, 2027.
 
 Let me know if you'd like this reformatted ahead of the meeting.

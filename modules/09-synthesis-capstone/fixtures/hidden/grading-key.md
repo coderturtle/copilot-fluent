@@ -26,7 +26,7 @@ match against the label below.
 
 | # | Error type | Exact string | Correct verification-method label | One-line correction |
 |---|---|---|---|---|
-| 1 | Wrong figure | `$720,150` | citation check | The account note states Molly's total assets under management as of the Q3 2027 close are $794,300, not $720,150. |
+| 1 | Wrong figure | `$720,150` | citation check | The account note states Molly's total assets under management as of mid-Q3 2027 are $794,300, not $720,150. |
 
 Per `docs/coachgremlin-authoring-lessons.md` lesson 11, the key string is the wrong figure itself,
 not an incidental true token sitting near it - `$720,150` is not a real value anywhere in the source

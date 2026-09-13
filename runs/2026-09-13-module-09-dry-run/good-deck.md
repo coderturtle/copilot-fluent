@@ -14,7 +14,7 @@ Molly Jensen - Q3 2027 Portfolio Review
 
 ## Slide 2: Headline numbers
 
-- Total portfolio value, Q3 2027 close: **$794,300**
+- Total portfolio value, as of mid-Q3 2027: **$794,300**
 - Best-performing fund this quarter: **Kellerman Growth Fund, +2.7%**
 - Kellerman Growth Fund allocation as of Q3 2027's rebalancing: **89% growth-oriented, 3%
   income-oriented, 8% cash**

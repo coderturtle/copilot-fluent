@@ -9,8 +9,7 @@ not something this workshop can vouch for.*
 
 Molly Jensen's account remains with Theo Reyes, advisor of record since February 2024. Since he took
 over, the portfolio's cumulative return under his management stands at 18.4% - the figure Molly asked
-to see directly at her Q3 2027 review. Total assets under management as of the Q3 2027 close are
-$794,300, spread across her usual municipal bond, equity, REIT, and cash positions, unchanged since
-the prior review. No changes were requested or made at the September 14, 2027 meeting.
+to see directly at her Q3 2027 review. Total assets under management as of mid-Q3 2027 are
+$794,300, spread across her usual three funds, unchanged since the prior review. No changes were requested or made at the September 14, 2027 meeting.
 
 **Word count: 80.**

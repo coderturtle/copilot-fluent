@@ -25,17 +25,16 @@ with if anyone asks how the relationship has performed since the handoff.
 |---|---|
 | Client | Molly Jensen |
 | Advisor of record | Theo Reyes, since February 2024 |
-| Total assets under management, Q3 2027 close | $794,300 |
+| Total assets under management, as of mid-Q3 2027 | $794,300 |
 | Cumulative return under Theo Reyes's management (Feb 2024 - Q3 2027) | 18.4% |
 | Most recent portfolio review meeting | September 14, 2027 |
 | Client reference (internal use only) | `Client Ref: [internal]` |
 
 ## Current holdings, unchanged since the last review
 
-- A diversified municipal bond allocation (the "Northbridge Municipal Income" sleeve)
-- A broad-market index-tracking equity sleeve
-- A real estate allocation (the "Averton Harbor REIT" sleeve)
-- A short-term cash reserve, held for an upcoming distribution
+The same three funds as every prior quarter's pull: the Kellerman Growth Fund, the Castle Income
+Fund, and the Legacy Balanced Fund. No new fund added, no fund dropped, no rebalancing between them
+this quarter.
 
 No other positions are on file for this account.
 
@@ -43,7 +42,7 @@ No other positions are on file for this account.
 
 Dalton asked for a quick check on Bodhi's account alongside Molly's this quarter, since both come up
 for review around the same time. Bodhi's total assets under management stand at $199,240 as of the
-Q3 2027 close, and nothing about the account structure changed this quarter - no new holdings, no
+as of mid-Q3 2027, and nothing about the account structure changed this quarter - no new holdings, no
 withdrawals, no advisor change. There is nothing further to verify on Bodhi's file this cycle beyond
 what the data pull already states.
 
