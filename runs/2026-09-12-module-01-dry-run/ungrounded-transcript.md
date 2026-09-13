@@ -20,8 +20,8 @@ document pasted in. The exact Part 1 prompt was sent as the very first message.
 > client relationships are usually confidential and I don't have that information available here.
 > Good luck in your first few weeks!
 
-**Facts present:** none of the 5 hidden facts. Copilot hedges with plausible-sounding genre-level
-generalities ("a few decades back," "a few hundred million to several billion") rather than
-declining outright, which is the harder case for a checker to catch - but it never lands on the
-specific year 1994, the specific figure $2.3 billion, the specific address, or either client name,
-because none of that is derivable without the document.
+**Match count:** 0 of the 5 checklist categories matched. Copilot hedges with plausible-sounding
+genre-level generalities ("a few decades back," "a few hundred million to several billion") rather
+than declining outright, which is the harder case for a checker to catch - but it never lands on any
+of the checklist's specific values (see `check-result.md`), because none of them are derivable
+without the source document.

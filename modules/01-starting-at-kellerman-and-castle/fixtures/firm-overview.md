@@ -3,7 +3,8 @@
 *A note from Oda Mae Brown, Office Manager, for every new team member's first week.*
 
 *Simulation only. Kellerman & Castle is a fictional firm built for this workshop. Nothing in this
-document describes a real client, a real account, or real financial, legal, or tax advice.*
+document describes a real client, a real account, or real financial, legal, or tax advice.* <!-- brand-lint-ignore: disclaimer naming what this fixture is not, per docs/brand.md's escape hatch for stating a rule by naming the phrase it excludes -->
+
 
 Hi, and welcome aboard. Everyone on this floor gets one of these on day one, because it's faster
 than explaining the same history in five separate hallway conversations. Keep it handy for your
@@ -29,10 +30,11 @@ don't need to know either of their situations in detail yet - just recognize the
 up in a handoff.
 
 A few habits worth picking up early: we never tell a client what to do with a specific position, and
-anything touching a client's tax situation gets routed to a specialist outside this business rather
-than answered here directly - that's Dalton's team's job to flag if a draft ever gets close to
-either line, and everything here operates under the assumption that we're not bound to any one
-real-world regulatory regime, since none of this is a real firm operating anywhere. If that all
+anything touching a client's specific financial or legal circumstances gets routed to a specialist
+outside this business rather than answered here directly - that's Dalton's team's job to flag if a
+draft ever gets close to either line, and everything here operates under the assumption that we're
+not bound to any one real-world regulatory regime, since none of this is a real firm operating
+anywhere. If that all
 sounds like a strange thing to put in a welcome note, it's because it is one of the first habits
 this whole workshop is built around teaching. More on that as you go.
 

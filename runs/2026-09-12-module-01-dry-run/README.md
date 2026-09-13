@@ -1,5 +1,9 @@
 # Module 01 dry run - 2026-09-12
 
+*Simulation only. Everything in this dry run - the fixture, the fictional firm, the synthetic
+transcripts - is fictional and built for this workshop. Nothing here describes a real client, a real
+account, or real financial, legal, or tax advice.*
+
 ## What this run is, and what it isn't
 
 No learner has attempted this module yet, and this session has no live Microsoft 365 Copilot
@@ -33,12 +37,15 @@ This run:
   like these synthetic ones.
 - It does not prove Copilot's actual current behavior when grounded or ungrounded - these
   transcripts are authored to be *plausible*, not captured from a live session.
-- It does not validate the Tier 2 (AI-graded rubric) grading prompt against a real AI grader run -
-  that's a separate, not-yet-done check, tracked the same way `docs/workshop-design.md` §8 already
-  names Tier 2 as an untested hypothesis for every module.
-- It is not evidence that the app-capability differences named in the Tier 2 rubric are the *only*
-  real differences between Copilot in Word and Excel - only that the two named are real ones,
-  checked against product knowledge as of 2026-09-12, not invented for the exercise.
+- It does not validate the AI-graded rubric's grading prompt against a real AI grader run - that's a
+  separate, not-yet-done check, tracked the same way `docs/workshop-design.md` §8 already names that
+  tier as an untested hypothesis for every module.
+- The grading prompt itself deliberately no longer pre-supplies example Word/Excel differences (a
+  fix pass on 2026-09-12 found the earlier draft handed the learner more ready-made answers than the
+  checklist required, letting a learner pass by rephrasing them instead of doing a real comparison).
+  This dry run does not validate that a real AI grader correctly judges a learner's own, un-prompted
+  notes against the revised, example-free prompt - a live grading pass against real submitted notes
+  is still a separate, not-yet-done check.
 
 ## Files
 

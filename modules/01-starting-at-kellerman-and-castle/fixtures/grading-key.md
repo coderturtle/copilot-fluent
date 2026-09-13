@@ -1,14 +1,18 @@
-# Module 01 grading-only key — NOT learner-facing
+# Module 01 grading-only key - maintainer reference, not the learner's reveal mechanism
 
-**Do not link this file from the module README, the site, or any learner-facing page.** It exists
-to check a submitted attempt, not to be read before attempting the exercise. This mirrors the
-established convention in this factory's other real (non-skeleton) workshops for hidden-vs-shown
-material: `borrow-native` keeps its checked answer (the test file, `fixtures/relay/tests/*.rs`)
-in a path the module README never asks the learner to open, rather than inline in the module page
-or held back in a separate private repository; `closed-book` keeps its answer key in the same
-public file as the exercise, but that only works there because its checkpoint is a closed-book
-quiz the learner has already committed answers to before scrolling past a stated warning — reading
-the key first can't retroactively un-take the quiz. Neither precedent puts grading material in a
+**Do not link this file from the module README, the site, or any learner-facing page.** This file
+is the maintainer's own rationale record for why these 5 facts (and not some other 5) were chosen.
+It is not how a learner actually checks their own work: the module README itself now reveals this
+same 5-fact checklist directly, inline, gated behind an honor-system instruction not to read it
+until both Part 1 transcripts are already saved - the same reveal-after-you've-committed-your-attempt
+shape `closed-book`'s own checkpoint uses, since this workshop has no live grading backend a learner
+could otherwise submit to. This mirrors the established convention in this factory's other real
+(non-skeleton) workshops for hidden-vs-shown material: `borrow-native` keeps its checked answer (the
+test file, `fixtures/relay/tests/*.rs`) in a path the module README never asks the learner to open,
+rather than inline in the module page or held back in a separate private repository; `closed-book`
+keeps its answer key in the same public file as the exercise, safe there because its checkpoint is a
+closed-book quiz the learner has already committed answers to before scrolling past a stated warning
+- reading the key first can't retroactively un-take the quiz. Neither precedent puts grading material in a
 private sibling repo, and neither should this: `copilot-fluent-private` is this workshop's
 maintainer-mirror/session-log sibling (session logs, mind-palace mirror, agent run logs), not a
 place any prior workshop uses to store fixture answer keys, and this repo's own site build

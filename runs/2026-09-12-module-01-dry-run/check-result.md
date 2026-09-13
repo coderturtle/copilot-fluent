@@ -1,30 +1,42 @@
 # Check result - Module 01 dry run, 2026-09-12
 
+*Simulation only. This dry run checks fictional grading logic against synthetic transcripts about a
+fictional firm; it is not evidence about any real client, account, or real financial, legal, or tax
+matter.*
+
 ## Part 1: hidden-fact check against `fixtures/grading-key.md`
 
-| # | Fact | Exact string checked for | In grounded transcript? | In ungrounded transcript? |
-|---|---|---|---|---|
-| 1 | Client name | `Priya Anand` | **Yes** - "You'll likely hear Priya Anand's name come up early on" | No |
-| 2 | Client name | `Marcus Delacroix` | No - not mentioned | No |
-| 3 | Founding year | `1994` | **Yes** - "been around since 1994" | No - only "a few decades back" |
-| 4 | AUM figure | `$2.3 billion` | **Yes** - "around $2.3 billion in client assets" | No - only "a few hundred million to several billion" |
-| 5 | Office address | `1420 Marner Street` | **Yes** - "Our main office is at 1420 Marner Street" | No - address not mentioned at all |
+This dry run does not reproduce the real 5-fact checklist's literal values here, on purpose - see
+`docs/coachgremlin-authoring-lessons.md` lesson 4 (a dry run's job is to prove the checking logic
+works, not to publish the answer in the same commit as the "hidden" key, or anywhere a learner would
+navigate through on the way to the exercise). `grounded-transcript.md` uses placeholder stand-ins for
+the same 5 categories; the counts below describe how many of those categories matched, not which
+exact strings did.
 
-**Grounded transcript score: 4 of 5.** Pass condition is at least 3 of 5 - this transcript passes,
-and by a realistic margin rather than a maximal one, which is the more useful case to have checked
-(a checker that only gets exercised by a perfect 5-for-5 answer hasn't really been tested).
+| # | Fact category | In grounded transcript (placeholder-substituted)? | In ungrounded transcript? |
+|---|---|---|---|
+| 1 | Client name #1 | **Yes** | No |
+| 2 | Client name #2 | No - not mentioned | No |
+| 3 | Founding year | **Yes** | No |
+| 4 | AUM figure | **Yes** | No |
+| 5 | Office address | **Yes** | No |
 
-**Ungrounded transcript score: 0 of 5.** Pass condition is 0 of 5 - this transcript passes. Notably,
-the ungrounded response *tries* to sound plausible (hedged ranges, generic reasoning about "firms
-like this") rather than flatly declining, which is exactly the harder case named in the module
-README and the run's own README as worth constructing rather than a trivial "I don't know."
-Despite that, it never lands on any of the 5 specific hidden strings, because none of them are
+**Grounded transcript: matched 4 of 5 categories.** Pass condition is at least 3 of 5 - this
+transcript passes, and by a realistic margin rather than a maximal one, which is the more useful case
+to have checked (a checker that only gets exercised by a perfect 5-for-5 answer hasn't really been
+tested).
+
+**Ungrounded transcript: matched 0 of 5 categories.** Pass condition is 0 of 5 - this transcript
+passes. Notably, the ungrounded response *tries* to sound plausible (hedged ranges, generic reasoning
+about "firms like this") rather than flatly declining, which is exactly the harder case named in the
+module README and the run's own README as worth constructing rather than a trivial "I don't know."
+Despite that, it never lands on any of the 5 specific hidden categories, because none of them are
 derivable from the prompt alone.
 
 **Conclusion: the checklist correctly separates the two synthetic transcripts.** This confirms the
-mechanical soundness of the 5-fact / "at least 3 of 5 vs. exactly 0 of 5" design for these two
-constructed examples. It does not confirm anything about a real learner's real Copilot output -
-see the run README's scope note.
+mechanical soundness of the 5-category / "at least 3 of 5 vs. exactly 0 of 5" design for these two
+constructed examples. It does not confirm anything about a real learner's real Copilot output - see
+the run README's scope note.
 
 ## Part 2: chat-vs-agent defensibility check (2 of 4 scenarios)
 
@@ -40,21 +52,27 @@ entirely (a custom agent consulting multiple configured knowledge files and deci
 order, with no schedule involved anywhere). This check-result was redone against the corrected
 scenario text below, not the original.
 
+**Second revision note (2026-09-12, this fix pass):** scenario 2's wording claimed the learner could
+"close the window entirely and come back forty minutes later" to a finished Researcher draft. A
+cross-model review found this specific claim isn't supported by Microsoft's own current Researcher
+documentation, which states typical response times (under 5 minutes for simple queries, 10 to 45
+minutes for complex ones) but does not confirm that closing the window/app entirely still lets the
+task complete. The module README's scenario 2 now says "step away to do something else" instead,
+which is defensible without asserting a specific mechanism Microsoft hasn't documented.
+
 Chosen as the two closest calls in the corrected set - the ones most likely to be mislabeled by
 someone applying "which app is this" or "does this sound impressive" instead of the actual property
 (present and driving every step, versus handed a goal/knowledge and left to decide its own steps):
 
-**Scenario 2** ("You open the Researcher agent and hand it a goal - 'pull last quarter's portfolio
-activity for three named clients from these three files and draft a summary' - then close the
-window entirely and come back forty minutes later to a finished draft, having done nothing in
-between.") - **published label: agent.** A plausible objection: Copilot Chat's own extended-reasoning
-mode can also take a while to answer inside one continuous chat turn, so "it took a few minutes"
-alone wouldn't be enough to call this agent rather than chat. Checked against the actual property:
-this scenario doesn't just take a while, it names a dedicated agent surface (Researcher), a
-multi-file task with more than one step (pull data from three files, cross-reference, draft), and
-explicitly has the user close the window and leave entirely rather than wait inside one open
-conversation - there is no live chat turn in progress to call this an extension of. Label holds, and
-holds more clearly than the scenario it replaced.
+**Scenario 2** ("You open the Researcher agent and hand it a multi-step goal - 'pull last quarter's
+portfolio activity for three named clients from these three files and draft a summary' - then step
+away to do something else... you come back to a finished, cited draft without having walked it
+through the steps yourself.") - **published label: agent.** A plausible objection: Copilot Chat's own
+extended-reasoning mode can also take a while to answer inside one continuous chat turn, so "it took
+a while" alone wouldn't be enough to call this agent rather than chat. Checked against the actual
+property: this scenario names a dedicated agent surface (Researcher) and a multi-file task with more
+than one step (pull data from three files, cross-reference, draft) that the learner does not
+personally drive turn by turn. Label holds.
 
 **Scenario 4** ("A colleague asks a question in Teams to a custom 'Client Prep' agent your team set
 up with its own configured knowledge files. It checks two of those files, cross-references them,
