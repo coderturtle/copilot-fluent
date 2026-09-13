@@ -19,7 +19,7 @@ The module arc is designed to map onto AB-730's own published skills outline - d
 
 Work through the modules in order - see [`modules/README.md`](modules/README.md) for the full arc. Each module states what you'll produce and what you get to keep afterward (a personal, reusable set of prompts for that part of your job).
 
-> **Current status: Module 02 is the highest module with real content.** Modules 01 and 02 have a real exercise, fixture, and gate; Modules 03-09 are still design-complete skeletons with no authored exercise yet. Watch `docs/build-log/` for progress, or reach out using the contact method below to ask.
+> **Current status: Module 03 is the highest module with real content.** Modules 01 through 03 have a real exercise, fixture, and gate; Modules 04-09 are still design-complete skeletons with no authored exercise yet. Watch `docs/build-log/` for progress, or reach out using the contact method below to ask.
 
 ## What you keep
 

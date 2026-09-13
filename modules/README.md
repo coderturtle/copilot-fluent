@@ -4,7 +4,7 @@ Copilot Fluent's arc is designed to map onto [AB-730](https://learn.microsoft.co
 
 **Hands-on by design, not passive text.** No module here completes by reading it. Every module states a required gate before content exists - an artifact you produce, checked two ways. Every gate also has a stated **takeaway**: you keep something reusable, not just proof you did the exercise.
 
-> **Content status: Module 01 and Module 02 are authored and ready to try.** Each has a real fixture, a real exercise, a real gate, and its grading logic has been checked before publishing (see each module's own page for exactly what that check does and doesn't prove). Modules 03-09 remain **skeleton only**: each has a decided question, arc position, gate design, and takeaway shape - see `docs/workshop-design.md` for the full design, hardened through 3 rounds of adversarial review and a 7-persona Workshop Review Panel pass - but no authored exercise, fixture, or grading prompt yet. The workshop team is writing those one module at a time, in order, before you reach them.
+> **Content status: Modules 01 through 03 are authored and ready to try.** Each has a real fixture, a real exercise, a real gate, and its grading logic has been checked before publishing (see each module's own page for exactly what that check does and doesn't prove). Modules 04-09 remain **skeleton only**: each has a decided question, arc position, gate design, and takeaway shape - see `docs/workshop-design.md` for the full design, hardened through 3 rounds of adversarial review and a 7-persona Workshop Review Panel pass - but no authored exercise, fixture, or grading prompt yet. The workshop team is writing those one module at a time, in order, before you reach them.
 
 ## The gate, in plain terms
 
