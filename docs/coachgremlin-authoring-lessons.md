@@ -94,8 +94,72 @@ module's task before authoring — don't substitute a generic framing device eve
 write. Module 01's design intended Johnny to onboard the learner and Oda Mae to assign the
 comparison task; the authored version dropped Johnny and reduced Oda Mae to a document byline.
 
+## 10. Fixtures need a real site route — this was a structural gap, not an authoring mistake
+
+Module 02's review found that `site/src/content/config.ts` only ever defined `buildlog` and
+`modules` collections — nothing serves `modules/*/fixtures/*.md` on the published site, so every
+module's fixture links 404 for a real learner (the same underlying issue as the already-known
+relative-link problem between modules). This is being fixed once, at the infrastructure level
+(a new `fixtures` collection, a matching route, and a remark plugin rewriting relative `.md` links
+at render time) rather than per-module. Don't re-flag this per module once it's fixed — check
+`docs/decisions.md` for the fix's own ADR row and confirm it's live before assuming it's still
+broken.
+
+## 11. An exact-string match must target the actual erroneous claim, not an incidental true token
+
+A planted error's grading-key string should be something that is *itself wrong* — a false figure,
+a false date, a fabricated fact. Don't key on a bystander token that happens to appear near the
+error (e.g. a *correct* name that shows up in a sentence making a false claim) — a learner (or a
+lenient grader) can match the token without ever identifying what was actually wrong. Check each
+planted error's key string in isolation: does matching this exact string, by itself, prove the
+learner caught the actual mistake, or could it match while missing the point entirely?
+
+## 12. A verification-method taxonomy must be mutually exclusive and internally consistent
+
+If a module's gate asks the learner to label each finding with "how would you verify this," the
+labels need real, distinct criteria — not two labels that could both apply to the same finding
+(e.g. "citation check" vs. "human review" when the flawed claim has no citation to check either
+way). Check that no single planted error's own correct label is ambiguous between two of your
+categories, and check that the *correction* text doesn't contradict the label it's paired with
+(e.g. don't have a "no record exists" label paired with a correction that asserts a specific
+record's contents).
+
+## 13. Re-verify a citation's own metadata (dates, "last updated" stamps), not just its content
+
+`docs/brand.md`'s product-drift rule requires a "verified against the product as of DATE"
+convention. That date must be checked against the source's *actual* last-updated stamp, not
+estimated — Module 02's grading key cited a real Microsoft Purview page but got its "last updated"
+date wrong, which makes the verification claim itself unreproducible even though the underlying
+fact was still current. If you fetch a live source, copy its real revision date, don't approximate
+it.
+
+## 14. "Fictional format" identifiers can still read as realistic — the ban is about appearance, not truth
+
+`docs/brand.md` prohibits "realistic account numbers or identifiers," full stop — an invented but
+structurally realistic ID (e.g. `KC-TIN-77841`, a plausible-looking tax/account reference) violates
+this even though it isn't a real number. Use identifiers that are obviously placeholder-shaped
+(e.g. "Client Ref: [internal]" or a clearly non-numeric label) rather than anything formatted like
+a real financial identifier.
+
+## 15. A planted error can itself smuggle in a banned implication — check the error's content, not just whether it's flagged as wrong
+
+Marking a claim as "this is the error to catch" doesn't exempt its literal text from brand rules
+that apply "anywhere." If a planted error states that compliance already reviewed something, or
+implies Dalton (a fictional character with no real compliance authority) performed a compliance
+function, that's a rule violation in the fixture's own content regardless of the fact that the
+exercise wants the learner to identify it as false. Write planted errors that are wrong in the
+*specific fact* they assert (a date, a figure, a name) without also asserting something that
+independently violates a brand/liability rule.
+
+## 16. Don't design a "quick check" that rewards the opposite of the module's own stated skill
+
+If a module teaches verification-by-comparing-to-source, an ungraded self-check at the end
+shouldn't frame *not* needing to reread the source as the goal — that teaches confidence-from-
+memory, which is the failure mode the module exists to correct. Any reflective/self-check section
+needs to reinforce the same habit the graded gate checks for, not a different or opposite one.
+
 ---
 
-Apply all nine lessons to every module going forward, and to Module 01's own fix pass. Update this
-file with any new generalizable lesson a later module's cross-model review surfaces — this is a
-living authoring guide, not a one-time postmortem.
+Apply all sixteen lessons to every module going forward, and to any module's own fix pass. Update
+this file with any new generalizable lesson a later module's cross-model review surfaces — this is
+a living authoring guide, not a one-time postmortem.
