@@ -112,7 +112,7 @@ This asks about your own instructions, not a match against a supplied example of
 
 ## Before you move on: a quick, ungraded check
 
-Not scored, not required, nobody's reading it but you. Look back at your five renamed conversations one more time, but imagine it's four months from now and you're trying to find one of them fast. Would the category tag and topic actually get you there, or would you still have to open two or three of them to check? If the answer is "I'd still have to open them," that's worth sitting with - it means the renaming convention technically satisfied the checklist above without actually solving the problem Oda Mae asked you to solve, which is the whole point of naming things well in the first place, not just naming them.
+Not scored, not required, nobody's reading it but you. Look back at your four remaining conversations one more time, but imagine it's four months from now and you're trying to find one of them fast. Would the category tag and topic actually get you there, or would you still have to open two or three of them to check? If the answer is "I'd still have to open them," that's worth sitting with - it means the renaming convention technically satisfied the checklist above without actually solving the problem Oda Mae asked you to solve, which is the whole point of naming things well in the first place, not just naming them.
 
 ## Takeaway
 

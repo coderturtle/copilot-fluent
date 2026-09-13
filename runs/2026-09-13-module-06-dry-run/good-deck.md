@@ -21,8 +21,8 @@ Simulation only - fictional data, fictional firm
 ## Slide 3: A note on this year
 
 The three funds' own quarterly returns varied across the year: the Kellerman Growth Fund posted the
-strongest Q4 return of the three (+5.1%), while the Castle Income Fund's returns stayed lower and
-steadier (+1.2% to +1.4%) each quarter. Ending-value changes reflect these returns plus any
+strongest Q4 return of the three (+5.1%), while the Castle Income Fund's four quarterly returns
+ranged from +0.7% to +1.4%. Ending-value changes reflect these returns plus any
 contributions or withdrawals Molly made during the year, which this data doesn't separate out. This
 report states what happened this year; it isn't a comment on what to do with any of it next year.
 

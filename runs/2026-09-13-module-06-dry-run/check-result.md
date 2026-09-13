@@ -84,9 +84,10 @@ itself become a real instance of that framing, even inside a dry-run artifact me
 checking logic. Module 05's first draft got exactly this wrong once already; this dry run does not
 repeat it.
 
-Instead, this reasons through the two non-financial stand-in sentences already embedded in this
-module's own grading prompt, checked against that prompt's own stated criteria - the same shape-level
-verification, without ever writing the financial-domain instance out:
+Instead, this constructs two non-financial stand-in sentences illustrating the same two shapes the
+module's own grading prompt describes only in the abstract, and checks them against that prompt's own
+stated criteria - the same shape-level verification, without ever writing the financial-domain
+instance out:
 
 **Stand-in 1 (leading question):** "Doesn't a time like this make you want to sign up for something
 longer?" Checked against the grading prompt's own stated bar (a caption phrased as a leading question

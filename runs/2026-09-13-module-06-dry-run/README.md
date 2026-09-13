@@ -33,8 +33,9 @@ This run:
 - Runs the exact-row-match check and the critical-use comparison against both decks, and checks that
   the fixture's own per-quarter fund returns don't let "which fund performed best in Q4" be answered by
   a generally-strongest-fund shortcut instead of an actual comparison (`check-result.md`, Parts 1-2).
-- Reasons by hand through the module's own two non-financial stand-in sentences against the
-  tone/recommendation-language grading prompt's stated criteria, deliberately not constructing a
+- Constructs two non-financial stand-in sentences illustrating the module's abstract description and
+  reasons by hand against the tone/recommendation-language grading prompt's stated criteria,
+  deliberately not constructing a
   finance-domain instance of the problem to test it - the same discipline Module 05's corrected
   README applies, after Module 05's first draft shipped an actual recommendation-flavored sentence as
   a "bad example" (`check-result.md`, Part 3).
