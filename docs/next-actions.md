@@ -12,6 +12,7 @@ silently dropped. Modules 03, 05, and 07 were not re-reviewed after their own fi
 allow); treat their "fixed" status as less independently confirmed than the six below.
 
 **Module 01:**
+- [ ] Mock Learner Gremlin (Module 01 run, 2026-09-14): align the independent-verification ground truth for the app-comparison AI-graded-pass item with the module's own learner-facing text — self-check and independent verification disagreed (FAIL vs PASS) on the diligent persona's genuinely-correct notes because only self-check treated "I predicted the grading result myself" as disqualifying; independent verification's ground truth had no equivalent requirement and passed it on content alone.
 - [ ] The revealed grounding-fact table doesn't carry the grading key's own stated tolerance for
   reasonable variants (e.g. "$2.3 billion" vs. "$2,300,000,000," or the address's full vs. street-only
   form) - an honestly-grounded transcript using a variant form could self-grade as a miss.
@@ -32,7 +33,11 @@ allow); treat their "fixed" status as less independently confirmed than the six 
   file's own scoping ("as of the June 3 review") literally against the draft's "added earlier this
   year" framing.
 
+**Module 03:**
+- [ ] Mock Learner Gremlin (Module 03 run, 2026-09-14): add a content-accuracy check to Module 03's Required-gate checklist — e.g., require a roster-quote justifying each client's section placement — because the current presence/spelling/header-existence checks let the scripted-flaw persona's self-check rationalize Owen Kowalczyk's misplacement (should be "Needs Johnny's Decision," filed as "Items to Route to Dalton") as the empty-section-omission rule working correctly; independent verification caught it, self-check didn't. Also consider giving "Share" the same blocked-with-reason exception "Schedule" gets in Part 3 — two independent personas hit the same ambiguity there.
+
 **Module 04:**
+- [ ] Mock Learner Gremlin Module 04 run (2026-09-14): where a checklist item is meant to catch a "real fact, wrong mechanism" error, phrase it as a direct value-vs-key diff ("does the learner's stated answer match the key exactly"), not a citation-presence check — that's what caught this run's scripted Statement-4 conflation of the 7-day chat-history window with saved-memory persistence; a presence-only check would have missed it. (Note: this run's own content-assembly step never included Part 6 at all, confirmed by diffing against the real README — a Mock Learner Gremlin pipeline defect, not a module gap; no Module 04 finding follows from that omission.)
 - [ ] An off-by-one in the dry run's own citation count (says "the other five," names six sources).
 - [ ] Two Notebooks-requirement sources cited with no URL, unlike every other citation in the file.
 - [ ] The dry run's "should pass" specificity example reuses the same illustrations the rubric prompt
@@ -43,6 +48,9 @@ allow); treat their "fixed" status as less independently confirmed than the six 
   their five new conversations.
 - [ ] `modules/README.md`'s description of this module ("no fixture file... rather than a hidden
   key") is stale relative to the fix that removed the real-conversations substitution path.
+
+**Module 05:**
+- [ ] Mock Learner Gremlin (Module 05 dogfood run, 2026-09-14): update the module's "3 exact data points" checklist item to require checking the *relationship* asserted between transplanted figures against the source, not just string presence — the scripted 2016-conflation flaw (0.89% expense ratio vs. 21% international allocation falsely tied to the same 2016 event) survived every mechanical gate and the AI-graded tone pass, and was only caught by an explicitly-prompted careful reread; separately, investigate why independent verification gave opposite verdicts on a near-identical "citing what other clients did" sentence present in both personas' summaries (PASS for Priya, FAIL as primary reason for Marcus) — possible grader anchoring on persona identity, recommend blind/anonymized independent verification.
 
 **Module 06:**
 - [ ] **(Mock Learner Gremlin, 2026-09-14, `docs/mock-learner-runs/2026-09-14-module-06.md`)** The
@@ -70,11 +78,15 @@ allow); treat their "fixed" status as less independently confirmed than the six 
   "at least as accurate" framing) - real, defensible choices, just not recorded as intentional drift
   the way Modules 03/08's precedent would do.
 
+**Module 07:**
+- [ ] Mock Learner Gremlin (Module 07 run, 2026-09-14): clarify Module 07's self-check README on the exact-match rule for the 5 checked commitment sentences — state explicitly whether third-person "Owner will..." phrasing is required as one contiguous string, or whether a bolded-name-plus-quoted-commitment format also counts, since the diligent persona's self-check false-failed all 5 correct items on this exact ambiguity while independent verification passed the same submission; also add a quarter/label-anchoring warning to guard against the Q2/Q3 meeting-title trap the scripted-flaw persona (correctly) caught only on a careful re-read.
+
 **Module 08:** see the 2026-09-13 fix-pass ADR row for which 7 of its review's 23 findings were fixed
 directly. The other 16 (citation-format gaps, a stale prerequisite list that assumes Modules 05/06
 are already done despite only listing Module 03, "fallback tier" vocabulary bordering on internal
 jargon, an unverified 30-character Name-field limit claim, several presence/absence-evidence
 weaknesses given the fixture isn't in `fixtures/hidden/`) are deliberately deferred, not fixed.
+- [ ] Mock Learner Gremlin Run 4 (`copilot-fluent` Module 08, 2026-09-14, `docs/mock-learner-runs/2026-09-14-module-08.md`): (1) tighten Part C's/Required Gate's recommendation-language checklist item with one explicit worked negative example (in the shape of "flag any of the client's accounts that might need extra attention before the meeting" — a suitability judgment using none of the named banned vocabulary) the way Module 09's Part 7 already names its own decoy trap in-text, since the scripted-flaw persona's own keyword-only Part C hand-read gave this exact clause a false clean pass, caught only when the self-check re-checked against the standard's actual wording rather than a keyword list, independently confirmed; (2) this module's required gate depends on operating a live external SaaS UI (Microsoft 365 Copilot's Agent Builder) rather than a checkable text artifact — neither persona had real tool access in this run, and the diligent persona's honest self-disclosure of that gap caused her to (correctly) fail the gate while the scripted-flaw persona's undisclosed version of the same gap went unflagged by both self-check and independent verification, muddying the scripted-flaw comparison this run was designed to produce. Fed back into the Gremlin's own definition as a new Risk.
 
 **Module 09** (the capstone, most heavily reviewed - 27 findings, 3 fixed): still open -
 - [ ] **(Mock Learner Gremlin, 2026-09-14, `docs/mock-learner-runs/2026-09-14-module-09.md`)**
