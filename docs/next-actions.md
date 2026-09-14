@@ -77,6 +77,15 @@ jargon, an unverified 30-character Name-field limit claim, several presence/abse
 weaknesses given the fixture isn't in `fixtures/hidden/`) are deliberately deferred, not fixed.
 
 **Module 09** (the capstone, most heavily reviewed - 27 findings, 3 fixed): still open -
+- [ ] **(Mock Learner Gremlin, 2026-09-14, `docs/mock-learner-runs/2026-09-14-module-09.md`)**
+  Three checklist items could be tightened the same way Module 06's was: Part 5's "contains at
+  least 3 exact transplanted data points including the note's own top-line figure" doesn't guard
+  against a summary that includes the right figure while also mislabeling a *different* figure as
+  the important one - a presence check, not a content-accuracy check. Part 6's "traces to an exact
+  row" doesn't catch a citation that names a real row ID but reports figures that row doesn't
+  actually contain (worse than a wrong-quarter citation, since the row ID itself is right and only
+  the attached data is wrong). Part 7's decoy-exclusion wording is already correct in the real
+  module text - that one held up in this run, unlike the other two.
 - [ ] Part 6 drops two of Module 06's four traceability clauses (the "a self-computed figure is not
   traceable" rule and the "line item" disambiguation), even though the dry run's own naive-deck check
   relies on the missing self-computed-figure rule to fail correctly.
