@@ -158,8 +158,37 @@ shouldn't frame *not* needing to reread the source as the goal — that teaches 
 memory, which is the failure mode the module exists to correct. Any reflective/self-check section
 needs to reinforce the same habit the graded gate checks for, not a different or opposite one.
 
+## 17. A self-check item that verifies presence isn't the same as one that verifies correctness — name the re-check action, not just the required end state
+
+Found by Mock Learner Gremlin (`~/hekton/gremlins/coaching/mock-learner-gremlin.md`), Modules 06
+and 09, 2026-09-14: a checklist item phrased as a required *end state* ("traces to an exact row,"
+"contains the note's own top-line figure") is satisfiable by a submission that's wrong in a way
+the end-state phrasing doesn't rule out — a real row cited with the wrong figures attached, a
+required figure present in the text while a *different* figure gets falsely labeled as the
+important one. A learner checking the end state alone ("is the figure there? is a row cited?") can
+truthfully answer yes and still be wrong. The fix isn't more end-state phrasing, it's naming the
+*re-check action* explicitly: "go back to the source and confirm this specific row's actual current
+content matches what you wrote," not "this traces to a row." Two runs' worth of evidence: Module
+06's self-check (produced in the same single turn as the attempt, no extra prompting) returned a
+false pass under the current end-state phrasing; Module 09's self-check, run in a follow-up turn
+explicitly instructed to "re-verify against source, don't just restate," caught the equivalent
+errors. That difference is itself informative, not just the individual results — see the next
+lesson.
+
+## 18. When measuring whether a self-check "works," standardize the self-check prompt itself, or the comparison is between two different experiments
+
+A corollary finding from the same Module 09 run: comparing "Module 06's self-check missed it" to
+"Module 09's self-check caught it" is not a clean before/after on the checklist wording, because
+the two self-checks weren't run the same way — Module 09's reveal turn included explicit
+re-verification instructions Module 06's didn't. Before concluding a checklist fix works (or that
+one module's checklist is weaker than another's), confirm the self-check was *elicited* the same
+way in both cases. This applies beyond this workshop: any process that measures "does a written
+instruction get followed" by prompting differently each time it's tested is measuring the prompt,
+not the instruction.
+
 ---
 
-Apply all sixteen lessons to every module going forward, and to any module's own fix pass. Update
-this file with any new generalizable lesson a later module's cross-model review surfaces — this is
-a living authoring guide, not a one-time postmortem.
+Apply all eighteen lessons to every module going forward, and to any module's own fix pass. Update
+this file with any new generalizable lesson a later module's cross-model review — or, as of
+2026-09-14, a Mock Learner Gremlin dogfood run — surfaces. This is a living authoring guide, not a
+one-time postmortem.
