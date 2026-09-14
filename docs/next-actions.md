@@ -45,6 +45,18 @@ allow); treat their "fixed" status as less independently confirmed than the six 
   key") is stale relative to the fix that removed the real-conversations substitution path.
 
 **Module 06:**
+- [ ] **(Mock Learner Gremlin, 2026-09-14, `docs/mock-learner-runs/2026-09-14-module-06.md`)** The
+  self-check checklist's row-tracing item ("traces to an exact row... confirms an exact
+  character-for-character match") checks textual exactness but not question-relevance: a blind
+  attempt that misreads Q3's return as Q4's for the "best-performing fund" figure cites a real,
+  exact-matching row (Castle Income Fund's Q3 return) and passes its own self-check falsely,
+  since nothing in the checklist's literal wording asks the learner to confirm the row is the
+  *correct* row for the question asked (the Q4 comparison specifically), not merely *a* row that
+  matches. The real, unmodified Tier-2 AI-graded pass caught this independently and correctly when
+  run for real against the same attempt - the two-tier design held as backstop - but Tier 1 should
+  be tightened anyway, since it's the cheaper check a learner runs first. Suggested fix: add
+  "confirm this is the specific row the question requires (the right quarter, the actual
+  comparison winner) - not just any row whose text happens to match" to that checklist item.
 - [ ] The critical-use rubric's "at least as accurate as the initial response" wording has a
   loophole: a deck that copies every inaccuracy in the initial output unchanged introduces nothing
   new and technically clears that limb; the dry run needed a supplementary argument to fail the naive
